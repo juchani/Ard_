@@ -1,0 +1,1929 @@
+
+
+
+
+
+
+
+Started logging.
+2021/06/29 16:05:11 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols.log
+2021/06/29 16:05:11 Initial board configuration: {"Arduino Micro" arduino:avr:micro}
+2021/06/29 16:05:11 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server087791863
+2021/06/29 16:05:11 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server087791863\sketch
+2021/06/29 16:05:11 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/29 16:05:11 IDE --> initialize 0 [93m locked[0m
+2021/06/29 16:05:11 IDE --> initialize 0 [93m unlocked[0m
+2021/06/29 16:05:11 INIT--- initializing workbench
+2021/06/29 16:05:11 INIT--- [93m locked[0m
+2021/06/29 16:05:11     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32)
+2021/06/29 16:05:11 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/29 16:05:11 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn arduino:avr:micro --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\631885802 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server087791863 --format json C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32
+2021/06/29 16:05:11 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/29 16:05:22 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server087791863"
+  },
+  "success": false
+}
+
+2021/06/29 16:05:22 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/29 16:05:22 Arduino Data Dir ->  c:\Users\Juchani\AppData\Local\Arduino15
+2021/06/29 16:05:22     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server087791863 -query-driver=c:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/29 16:05:23 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols-clangd.log
+2021/06/29 16:05:23 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols-clangd-err.log
+2021/06/29 16:05:23 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/29 16:05:23 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/29 16:05:23 INIT--- initializing workbench (done)
+2021/06/29 16:05:23 INIT--- [93m unlocked[0m
+2021/06/29 16:05:23 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/29 16:05:23 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/29 16:05:23 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/29 16:05:23 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino@1 as 'cpp')
+2021/06/29 16:05:23     increasing .ino tracked files count: 1
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp@1 as 'cpp')
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/29 16:05:23 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/29 16:05:23 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/29 16:05:23 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/29 16:05:23 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:0:0)
+2021/06/29 16:05:23 SYLD--- [93m read-locked[0m
+2021/06/29 16:05:23 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp
+2021/06/29 16:05:23 SYLD--- [93m read-unlocked[0m
+2021/06/29 16:05:23 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/29 16:05:23     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp:2:0)
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/29 16:05:23 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/29 16:05:23 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 (queued)
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 [93m read-locked[0m
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 (running)
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp):
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 0:9 - 1: pp_file_not_found
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 6:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 7:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 9:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 10:12 - 2: -Wwritable-strings
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 14:2 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 18:2 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 23:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 26:6 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 31:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 38:6 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 39:19 - 1: undeclared_var_use
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 42:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 44:2 - 1: undeclared_var_use
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/29 16:05:23 SYLD--- [93m read-locked[0m
+2021/06/29 16:05:23 SYLD---    symbol: Function setup 13:0-35:1
+2021/06/29 16:05:23 SYLD---      TRIMMED> void setup() 
+2021/06/29 16:05:23 SYLD---    symbol: Function loop 37:0-45:1
+2021/06/29 16:05:23 SYLD---      TRIMMED> void loop() 
+2021/06/29 16:05:23 SYLD--- [93m read-unlocked[0m
+2021/06/29 16:05:23 SYLD--- (done)
+2021/06/29 16:05:23     URI: converted 0:9-0:20 to /not-ino:0:9-0:20
+2021/06/29 16:05:23     URI: converted 4:0-4:15 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:0-2:15
+2021/06/29 16:05:23     <-- codeAction(0 elements)
+2021/06/29 16:05:23 <-- codeAction(0 elements)
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/29 16:05:23 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/29 16:05:23     URI: converted 6:0-6:6 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:4:0-4:6
+2021/06/29 16:05:23     URI: converted 7:0-7:7 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:5:0-5:7
+2021/06/29 16:05:23     URI: converted 9:0-9:6 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:7:0-7:6
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/29 16:05:23     URI: converted 10:12-10:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:8:12-8:18
+2021/06/29 16:05:23     URI: converted 14:2-14:8 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:2-12:8
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 18:2-18:8 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:2-16:8
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 23:4-23:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:4-21:10
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 26:6-26:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:6-24:12
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 31:4-31:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:4-29:10
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 38:6-38:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:36:6-36:12
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 39:19-39:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:19-37:25
+2021/06/29 16:05:23     URI: converted 42:4-42:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:4-40:10
+2021/06/29 16:05:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:05:23     URI: converted 44:2-44:7 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:42:2-42:7
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 to IDE: publishDiagnostics(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino):
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 4:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 5:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 7:0 - 1: unknown_typename
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 8:12 - 2: -Wwritable-strings
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 12:2 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 16:2 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 21:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 24:6 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 29:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 36:6 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 37:19 - 1: undeclared_var_use
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 40:4 - 1: undeclared_var_use_suggest
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 2:16 - 3: 
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 > 42:2 - 1: undeclared_var_use
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/29 16:05:23 CLG <-- textDocument/publishDiagnostics notif5 [93m read-unlocked[0m
+2021/06/29 16:05:23 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 2 [93m read-locked[0m
+2021/06/29 16:05:23 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:0:0)
+2021/06/29 16:05:23     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp:2:0)
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 2 sent to Clang
+2021/06/29 16:05:23 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 3 (3): [0m
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 2 Queued check document symbols
+2021/06/29 16:05:23 SYCK--- [93m read-locked[0m
+2021/06/29 16:05:23 SYCK--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server087791863/sketch/bt_esp32.ino.cpp
+2021/06/29 16:05:23 SYCK--- [93m read-unlocked[0m
+2021/06/29 16:05:23 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 4: [0m
+2021/06/29 16:05:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 4 (4): [0m
+2021/06/29 16:05:23 SYCK--- [93m read-locked[0m
+2021/06/29 16:05:23 SYCK---    symbol: Function setup 13:0-35:1
+2021/06/29 16:05:23 SYCK---      TRIMMED> void setup() 
+2021/06/29 16:05:23 SYCK---    symbol: Function loop 37:0-45:1
+2021/06/29 16:05:23 SYCK---      TRIMMED> void loop() 
+2021/06/29 16:05:23 SYCK--- [93m read-unlocked[0m
+2021/06/29 16:05:23 SYCK--- (done)
+2021/06/29 16:05:23     <-- codeAction(0 elements)
+2021/06/29 16:05:23 <-- codeAction(0 elements)
+2021/06/29 16:05:23 IDE --> textDocument/codeAction 2 [93m read-unlocked[0m
+2021/06/29 16:05:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/29 16:05:42 [92mIDE --> LS     CL: REQUEST shutdown 3: [0m
+2021/06/29 16:05:42 IDE --> shutdown 3 [93m read-locked[0m
+2021/06/29 16:05:42 IDE --> shutdown 3 sent to Clang
+2021/06/29 16:05:42 [91mIDE     LS --> CL: REQUEST shutdown 5: [0m
+2021/06/29 16:05:42 [92mIDE     LS <-- CL: ANSWER shutdown 5 (5): [0m
+2021/06/29 16:05:42 IDE --> shutdown 3 [93m read-unlocked[0m
+2021/06/29 16:05:42 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/29 16:05:42 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/29 16:05:42 IDE --> exit notif3 [93m read-locked[0m
+2021/06/29 16:05:42 IDE --> exit notif3 sent to Clang
+2021/06/29 16:05:42 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/29 16:05:42 IDE --> exit notif3 [93m read-unlocked[0m
+2021/06/29 16:05:42 Lost connection with clangd!
+2021/06/29 16:05:42 removing buildpath
+
+
+
+
+
+
+
+Started logging.
+2021/06/29 16:05:42 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols.log
+2021/06/29 16:05:42 Initial board configuration: {"TTGO LoRa32-OLED v2.1.6" esp32:esp32:ttgo-lora32-v21new}
+2021/06/29 16:05:42 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server266500963
+2021/06/29 16:05:42 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server266500963\sketch
+2021/06/29 16:05:42 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/29 16:05:42 IDE --> initialize 0 [93m locked[0m
+2021/06/29 16:05:42 IDE --> initialize 0 [93m unlocked[0m
+2021/06/29 16:05:42 INIT--- initializing workbench
+2021/06/29 16:05:42 INIT--- [93m locked[0m
+2021/06/29 16:05:42     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32)
+2021/06/29 16:05:42 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/29 16:05:42 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn esp32:esp32:ttgo-lora32-v21new --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\170176870 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server266500963 --format json C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32
+2021/06/29 16:05:42 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/29 16:05:54 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server266500963",
+    "used_libraries": [
+      {
+        "name": "BluetoothSerial",
+        "author": "Evandro Copercini",
+        "maintainer": "Evandro Copercini",
+        "sentence": "Simple UART to Classical Bluetooth bridge for ESP32",
+        "category": "Communication",
+        "architectures": [
+          "esp32"
+        ],
+        "install_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial",
+        "source_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial\\src",
+        "container_platform": "esp32:esp32@1.0.5",
+        "real_name": "BluetoothSerial",
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial\\examples\\SerialToSerialBT",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial\\examples\\SerialToSerialBTM",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial\\examples\\SerialToSerialBT_SSP_pairing",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.5\\libraries\\BluetoothSerial\\examples\\bt_remove_paired_devices"
+        ],
+        "provides_includes": [
+          "BluetoothSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/29 16:05:54 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/29 16:05:55 Arduino Data Dir ->  c:\Users\Juchani\AppData\Local\Arduino15
+2021/06/29 16:05:55     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server266500963 -query-driver=c:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/29 16:05:55 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols-clangd.log
+2021/06/29 16:05:55 logging to c:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\inols-clangd-err.log
+2021/06/29 16:05:55 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/29 16:05:55 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/29 16:05:55 INIT--- initializing workbench (done)
+2021/06/29 16:05:55 INIT--- [93m unlocked[0m
+2021/06/29 16:05:55 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/29 16:05:55 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/29 16:05:55 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/29 16:05:55 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino@1 as 'cpp')
+2021/06/29 16:05:55     increasing .ino tracked files count: 1
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp@1 as 'cpp')
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/29 16:05:55 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/29 16:05:55 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/29 16:05:55 SYLD--- [93m read-locked[0m
+2021/06/29 16:05:55 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/29 16:05:55 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp
+2021/06/29 16:05:55 SYLD--- [93m read-unlocked[0m
+2021/06/29 16:05:55 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/29 16:05:55 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/29 16:05:55 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:0:0)
+2021/06/29 16:05:55     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:2:0)
+2021/06/29 16:05:55 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/29 16:05:55 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/29 16:05:55 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/29 16:05:55 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/40 0%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/40 0%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/40 0%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/40 0%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/40 2.5%[0m
+2021/06/29 16:05:55 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/40 2.5%[0m
+2021/06/29 16:05:57 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 (queued)
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 [93m read-locked[0m
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 (running)
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp):
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 > 0:9 - 1: unknown_typename
+2021/06/29 16:05:57 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/29 16:05:57 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/29 16:05:57 SYLD--- [93m read-locked[0m
+2021/06/29 16:05:57 SYLD---    symbol: Function setup 14:0-14:12
+2021/06/29 16:05:57 SYLD---             > void setup()
+2021/06/29 16:05:57 SYLD---    symbol: Function loop 16:0-16:11
+2021/06/29 16:05:57 SYLD---             > void loop()
+2021/06/29 16:05:57 SYLD---    symbol: Function setup 18:0-40:1
+2021/06/29 16:05:57 SYLD---      TRIMMED> void setup() 
+2021/06/29 16:05:57 SYLD---    symbol: Function loop 42:0-50:1
+2021/06/29 16:05:57 SYLD---      TRIMMED> void loop() 
+2021/06/29 16:05:57 SYLD--- [93m read-unlocked[0m
+2021/06/29 16:05:57 SYLD--- (done)
+2021/06/29 16:05:57     <-- codeAction(0 elements)
+2021/06/29 16:05:57 <-- codeAction(0 elements)
+2021/06/29 16:05:57 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/29 16:05:57 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/29 16:05:57 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/29 16:05:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/29 16:05:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/40 2.5%[0m
+2021/06/29 16:05:57     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/29 16:05:57     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/29 16:05:57     URI: converted 0:9-0:10 to /not-ino:0:9-0:10
+2021/06/29 16:05:57 CLG <-- textDocument/publishDiagnostics notif9 [93m read-unlocked[0m
+2021/06/29 16:06:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/40 5%[0m
+2021/06/29 16:06:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/40 5%[0m
+2021/06/29 16:06:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/40 5%[0m
+2021/06/29 16:06:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/40 5%[0m
+2021/06/29 16:06:06 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/40 7.5%[0m
+2021/06/29 16:06:06 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/40 7.5%[0m
+2021/06/29 16:06:06 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/40 7.5%[0m
+2021/06/29 16:06:06 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/40 10%[0m
+2021/06/29 16:06:06 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/40 10%[0m
+2021/06/29 16:06:06 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/40 10%[0m
+2021/06/29 16:06:07 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/40 12.5%[0m
+2021/06/29 16:06:07 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/40 12.5%[0m
+2021/06/29 16:06:07 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/40 12.5%[0m
+2021/06/29 16:06:12 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/29 16:06:12 IDE --> textDocument/codeAction 2 [93m read-locked[0m
+2021/06/29 16:06:12 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:12:23)
+2021/06/29 16:06:12     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:19:23)
+2021/06/29 16:06:12 IDE --> textDocument/codeAction 2 sent to Clang
+2021/06/29 16:06:12 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/29 16:06:13 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 3 (3): [0m
+2021/06/29 16:06:13     <-- codeAction(0 elements)
+2021/06/29 16:06:13 <-- codeAction(0 elements)
+2021/06/29 16:06:13 IDE --> textDocument/codeAction 2 [93m read-unlocked[0m
+2021/06/29 16:06:13 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/29 16:06:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 3: [0m
+2021/06/29 16:06:14 IDE --> textDocument/documentHighlight 3 [93m read-locked[0m
+2021/06/29 16:06:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:23)
+2021/06/29 16:06:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:23)
+2021/06/29 16:06:14 IDE --> textDocument/documentHighlight 3 sent to Clang
+2021/06/29 16:06:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 4: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 4 (4): [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 3 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif3 [93m read-locked[0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif3 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif3 [93m read-unlocked[0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 4: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 4 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:23)
+2021/06/29 16:06:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:23)
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 4 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 5: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 5 (5): [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 4 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif4 [93m read-locked[0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif4 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif4 [93m read-unlocked[0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 5: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 5 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:18:23)
+2021/06/29 16:06:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:25:23)
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 5 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 6: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 6 (6): [0m
+2021/06/29 16:06:15     URI: converted 25:23-25:30 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:23-18:30
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 5 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (5): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif5 [93m read-locked[0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif5 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif5 [93m read-unlocked[0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 6: [0m
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 6 [93m read-locked[0m
+2021/06/29 16:06:15 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:20:17)
+2021/06/29 16:06:15     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:27:17)
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 6 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 7: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 7 (7): [0m
+2021/06/29 16:06:15     <-- codeAction(0 elements)
+2021/06/29 16:06:15 <-- codeAction(0 elements)
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 6 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (6): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 7: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 7 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:21:23)
+2021/06/29 16:06:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:28:23)
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 7 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 8: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 8 (8): [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 7 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (7): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 8: [0m
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 8 [93m read-locked[0m
+2021/06/29 16:06:15 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:21:23)
+2021/06/29 16:06:15     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:28:23)
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 8 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 9: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 9 (9): [0m
+2021/06/29 16:06:15     <-- codeAction(0 elements)
+2021/06/29 16:06:15 <-- codeAction(0 elements)
+2021/06/29 16:06:15 IDE --> textDocument/codeAction 8 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (8): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 9: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 9 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:23:23)
+2021/06/29 16:06:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:30:23)
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 9 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 10: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 10 (10): [0m
+2021/06/29 16:06:15     URI: converted 30:20-30:29 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:20-23:29
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 9 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (9): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif6 [93m read-locked[0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif6 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:15 IDE --> $/cancelRequest notif6 [93m read-unlocked[0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 10: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 10 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:23)
+2021/06/29 16:06:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:23)
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 10 sent to Clang
+2021/06/29 16:06:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 11: [0m
+2021/06/29 16:06:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 11 (11): [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 10 [93m read-unlocked[0m
+2021/06/29 16:06:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (10): [0m
+2021/06/29 16:06:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 11: [0m
+2021/06/29 16:06:15 IDE --> textDocument/documentHighlight 11 [93m read-locked[0m
+2021/06/29 16:06:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:23)
+2021/06/29 16:06:16     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:23)
+2021/06/29 16:06:16 IDE --> textDocument/documentHighlight 11 sent to Clang
+2021/06/29 16:06:16 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 12: [0m
+2021/06/29 16:06:16 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 12 (12): [0m
+2021/06/29 16:06:16 IDE --> textDocument/documentHighlight 11 [93m read-unlocked[0m
+2021/06/29 16:06:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (11): [0m
+2021/06/29 16:06:16 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 12: [0m
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 12 [93m read-locked[0m
+2021/06/29 16:06:16 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:23)
+2021/06/29 16:06:16     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:23)
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 12 sent to Clang
+2021/06/29 16:06:16 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 13: [0m
+2021/06/29 16:06:16 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 13 (13): [0m
+2021/06/29 16:06:16     <-- codeAction(0 elements)
+2021/06/29 16:06:16 <-- codeAction(0 elements)
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 12 [93m read-unlocked[0m
+2021/06/29 16:06:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (12): [0m
+2021/06/29 16:06:16 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 13: [0m
+2021/06/29 16:06:16 IDE --> textDocument/documentHighlight 13 [93m read-locked[0m
+2021/06/29 16:06:16 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:28:23)
+2021/06/29 16:06:16     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:35:23)
+2021/06/29 16:06:16 IDE --> textDocument/documentHighlight 13 sent to Clang
+2021/06/29 16:06:16 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 14: [0m
+2021/06/29 16:06:16 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 14 (14): [0m
+2021/06/29 16:06:16     URI: converted 35:15-35:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:15-28:25
+2021/06/29 16:06:16 IDE --> textDocument/documentHighlight 13 [93m read-unlocked[0m
+2021/06/29 16:06:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (13): [0m
+2021/06/29 16:06:16 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 14: [0m
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 14 [93m read-locked[0m
+2021/06/29 16:06:16 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:28:23)
+2021/06/29 16:06:16     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:35:23)
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 14 sent to Clang
+2021/06/29 16:06:16 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 15: [0m
+2021/06/29 16:06:16 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 15 (15): [0m
+2021/06/29 16:06:16     <-- codeAction(0 elements)
+2021/06/29 16:06:16 <-- codeAction(0 elements)
+2021/06/29 16:06:16 IDE --> textDocument/codeAction 14 [93m read-unlocked[0m
+2021/06/29 16:06:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (14): [0m
+2021/06/29 16:06:17 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 15: [0m
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 15 [93m read-locked[0m
+2021/06/29 16:06:17 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:29:23)
+2021/06/29 16:06:17     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:36:23)
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 15 sent to Clang
+2021/06/29 16:06:17 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 16: [0m
+2021/06/29 16:06:17 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 16 (16): [0m
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 15 [93m read-unlocked[0m
+2021/06/29 16:06:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (15): [0m
+2021/06/29 16:06:17 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 16: [0m
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 16 [93m read-locked[0m
+2021/06/29 16:06:17 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:23)
+2021/06/29 16:06:17     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:23)
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 16 sent to Clang
+2021/06/29 16:06:17 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 17: [0m
+2021/06/29 16:06:17 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 17 (17): [0m
+2021/06/29 16:06:17 IDE --> textDocument/documentHighlight 16 [93m read-unlocked[0m
+2021/06/29 16:06:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (16): [0m
+2021/06/29 16:06:17 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:17 IDE --> $/cancelRequest notif7 [93m read-locked[0m
+2021/06/29 16:06:17 IDE --> $/cancelRequest notif7 sent to Clang
+2021/06/29 16:06:17 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:17 IDE --> $/cancelRequest notif7 [93m read-unlocked[0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 17: [0m
+2021/06/29 16:06:18 IDE --> textDocument/codeAction 17 [93m read-locked[0m
+2021/06/29 16:06:18 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:35:13)
+2021/06/29 16:06:18     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:42:13)
+2021/06/29 16:06:18 IDE --> textDocument/codeAction 17 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 18: [0m
+2021/06/29 16:06:18 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 18 (18): [0m
+2021/06/29 16:06:18     <-- codeAction(0 elements)
+2021/06/29 16:06:18 <-- codeAction(0 elements)
+2021/06/29 16:06:18 IDE --> textDocument/codeAction 17 [93m read-unlocked[0m
+2021/06/29 16:06:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (17): [0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 18: [0m
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 18 [93m read-locked[0m
+2021/06/29 16:06:18 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:37:23)
+2021/06/29 16:06:18     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:44:23)
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 18 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 19: [0m
+2021/06/29 16:06:18 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 19 (19): [0m
+2021/06/29 16:06:18     URI: converted 19:2-19:8 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:2-12:8
+2021/06/29 16:06:18     URI: converted 23:2-23:8 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:2-16:8
+2021/06/29 16:06:18     URI: converted 28:4-28:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:4-21:10
+2021/06/29 16:06:18     URI: converted 31:6-31:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:6-24:12
+2021/06/29 16:06:18     URI: converted 36:4-36:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:4-29:10
+2021/06/29 16:06:18     URI: converted 43:6-43:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:36:6-36:12
+2021/06/29 16:06:18     URI: converted 44:19-44:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:19-37:25
+2021/06/29 16:06:18     URI: converted 47:4-47:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:4-40:10
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 18 [93m read-unlocked[0m
+2021/06/29 16:06:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (18): [0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif8 [93m read-locked[0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif8 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif8 [93m read-unlocked[0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 19: [0m
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 19 [93m read-locked[0m
+2021/06/29 16:06:18 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:23)
+2021/06/29 16:06:18     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:23)
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 19 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 20: [0m
+2021/06/29 16:06:18 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 20 (20): [0m
+2021/06/29 16:06:18     URI: converted 46:15-46:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:15-39:24
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 19 [93m read-unlocked[0m
+2021/06/29 16:06:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (19): [0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif9 [93m read-locked[0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif9 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif9 [93m read-unlocked[0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 20: [0m
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 20 [93m read-locked[0m
+2021/06/29 16:06:18 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:40:23)
+2021/06/29 16:06:18     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:47:23)
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 20 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 21: [0m
+2021/06/29 16:06:18 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 21 (21): [0m
+2021/06/29 16:06:18     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:06:18     URI: converted 21:2-21:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:2-14:10
+2021/06/29 16:06:18     URI: converted 22:2-22:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:2-15:10
+2021/06/29 16:06:18     URI: converted 25:14-25:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:14-18:22
+2021/06/29 16:06:18     URI: converted 30:11-30:19 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:11-23:19
+2021/06/29 16:06:18     URI: converted 35:6-35:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:6-28:14
+2021/06/29 16:06:18     URI: converted 39:2-39:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:2-32:10
+2021/06/29 16:06:18     URI: converted 44:4-44:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:4-37:12
+2021/06/29 16:06:18     URI: converted 46:6-46:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:6-39:14
+2021/06/29 16:06:18     URI: converted 47:17-47:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:17-40:25
+2021/06/29 16:06:18 IDE --> textDocument/documentHighlight 20 [93m read-unlocked[0m
+2021/06/29 16:06:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (20): [0m
+2021/06/29 16:06:18 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif10 [93m read-locked[0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif10 sent to Clang
+2021/06/29 16:06:18 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:06:18 IDE --> $/cancelRequest notif10 [93m read-unlocked[0m
+2021/06/29 16:06:19 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 21: [0m
+2021/06/29 16:06:19 IDE --> textDocument/codeAction 21 [93m read-locked[0m
+2021/06/29 16:06:19 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:43:1)
+2021/06/29 16:06:19     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:50:1)
+2021/06/29 16:06:19 IDE --> textDocument/codeAction 21 sent to Clang
+2021/06/29 16:06:19 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 22: [0m
+2021/06/29 16:06:19 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 22 (22): [0m
+2021/06/29 16:06:19     <-- codeAction(0 elements)
+2021/06/29 16:06:19 <-- codeAction(0 elements)
+2021/06/29 16:06:19 IDE --> textDocument/codeAction 21 [93m read-unlocked[0m
+2021/06/29 16:06:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (21): [0m
+2021/06/29 16:06:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/40 15%[0m
+2021/06/29 16:06:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/40 15%[0m
+2021/06/29 16:06:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/40 15%[0m
+2021/06/29 16:06:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/40 17.5%[0m
+2021/06/29 16:06:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/40 17.5%[0m
+2021/06/29 16:06:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/40 17.5%[0m
+2021/06/29 16:06:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/40 17.5%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/40 20%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/40 20%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/40 20%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/40 20%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/40 22.5%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/40 22.5%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/40 22.5%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/40 22.5%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/40 25%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/40 25%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/40 25%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/40 25%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/40 27.5%[0m
+2021/06/29 16:06:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/40 27.5%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/40 27.5%[0m
+2021/06/29 16:06:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/40 27.5%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/40 30%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/40 30%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/40 30%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/40 30%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/40 32.5%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/40 32.5%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/40 32.5%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/40 32.5%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/40 35%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/40 35%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/40 35%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/40 35%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/40 37.5%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/40 37.5%[0m
+2021/06/29 16:06:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/40 37.5%[0m
+2021/06/29 16:06:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/40 37.5%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/40 40%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/40 40%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/40 40%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/40 42.5%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/40 42.5%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/40 42.5%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/40 42.5%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/40 45%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/40 45%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/40 45%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/40 45%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/40 47.5%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/40 47.5%[0m
+2021/06/29 16:06:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/40 47.5%[0m
+2021/06/29 16:06:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/40 47.5%[0m
+2021/06/29 16:06:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/40 50%[0m
+2021/06/29 16:06:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/40 50%[0m
+2021/06/29 16:06:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/40 50%[0m
+2021/06/29 16:06:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/40 50%[0m
+2021/06/29 16:06:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/40 52.5%[0m
+2021/06/29 16:06:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/40 52.5%[0m
+2021/06/29 16:06:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/40 52.5%[0m
+2021/06/29 16:06:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/40 52.5%[0m
+2021/06/29 16:06:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/40 55%[0m
+2021/06/29 16:06:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/40 55%[0m
+2021/06/29 16:06:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/40 55%[0m
+2021/06/29 16:06:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/40 55%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/40 57.5%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/40 57.5%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/40 57.5%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/40 57.5%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/40 60%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/40 60%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/40 60%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/40 60%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/40 62.5%[0m
+2021/06/29 16:06:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/40 62.5%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/40 62.5%[0m
+2021/06/29 16:06:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/40 62.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/40 65%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/40 65%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/40 65%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/40 65%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/40 67.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/40 67.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/40 67.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/40 67.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/40 70%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/40 70%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/40 70%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/40 70%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/40 72.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/40 72.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/40 72.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/40 72.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/40 75%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/40 75%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/40 75%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/40 75%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/40 77.5%[0m
+2021/06/29 16:06:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/40 77.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/40 77.5%[0m
+2021/06/29 16:06:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/40 77.5%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/40 80%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/40 80%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/40 80%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/40 80%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/40 82.5%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/40 82.5%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/40 82.5%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/40 82.5%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/40 85%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/40 85%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/40 85%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/40 85%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/40 87.5%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/40 87.5%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/40 87.5%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/40 90%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/40 90%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/40 90%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/40 90%[0m
+2021/06/29 16:07:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/40 92.5%[0m
+2021/06/29 16:07:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/40 92.5%[0m
+2021/06/29 16:07:01 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/40 95%[0m
+2021/06/29 16:07:01 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/40 95%[0m
+2021/06/29 16:07:01 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/40 97.5%[0m
+2021/06/29 16:07:01 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/40 97.5%[0m
+2021/06/29 16:07:03 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/29 16:07:03 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/29 16:08:10 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 22: [0m
+2021/06/29 16:08:10 IDE --> textDocument/documentHighlight 22 [93m read-locked[0m
+2021/06/29 16:08:10 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:20)
+2021/06/29 16:08:10     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:20)
+2021/06/29 16:08:10 IDE --> textDocument/documentHighlight 22 sent to Clang
+2021/06/29 16:08:10 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 23: [0m
+2021/06/29 16:08:10 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 23 (23): [0m
+2021/06/29 16:08:10     URI: converted 46:15-46:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:15-39:24
+2021/06/29 16:08:10 IDE --> textDocument/documentHighlight 22 [93m read-unlocked[0m
+2021/06/29 16:08:10 [91mIDE <-- LS     CL: ANSWER UNBOUND (22): [0m
+2021/06/29 16:08:11 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 23: [0m
+2021/06/29 16:08:11 IDE --> textDocument/codeAction 23 [93m read-locked[0m
+2021/06/29 16:08:11 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:20)
+2021/06/29 16:08:11     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:20)
+2021/06/29 16:08:11 IDE --> textDocument/codeAction 23 sent to Clang
+2021/06/29 16:08:11 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 24: [0m
+2021/06/29 16:08:11 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 24 (24): [0m
+2021/06/29 16:08:11     <-- codeAction(0 elements)
+2021/06/29 16:08:11 <-- codeAction(0 elements)
+2021/06/29 16:08:11 IDE --> textDocument/codeAction 23 [93m read-unlocked[0m
+2021/06/29 16:08:11 [91mIDE <-- LS     CL: ANSWER UNBOUND (23): [0m
+2021/06/29 16:09:59 [92mIDE --> LS     CL: REQUEST textDocument/hover 24: [0m
+2021/06/29 16:09:59 IDE --> textDocument/hover 24 [93m read-locked[0m
+2021/06/29 16:09:59 --> hover(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:86)
+2021/06/29 16:09:59     --> hover(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:86)
+2021/06/29 16:09:59 IDE --> textDocument/hover 24 sent to Clang
+2021/06/29 16:09:59 [91mIDE     LS --> CL: REQUEST textDocument/hover 25: [0m
+2021/06/29 16:09:59 [92mIDE     LS <-- CL: ANSWER textDocument/hover 25 (25): [0m
+2021/06/29 16:09:59 IDE --> textDocument/hover 24 [93m read-unlocked[0m
+2021/06/29 16:09:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (24): [0m
+2021/06/29 16:09:59 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 25: [0m
+2021/06/29 16:09:59 IDE --> textDocument/documentHighlight 25 [93m read-locked[0m
+2021/06/29 16:09:59 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:87)
+2021/06/29 16:09:59     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:87)
+2021/06/29 16:09:59 IDE --> textDocument/documentHighlight 25 sent to Clang
+2021/06/29 16:09:59 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 26: [0m
+2021/06/29 16:09:59 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 26 (26): [0m
+2021/06/29 16:09:59 IDE --> textDocument/documentHighlight 25 [93m read-unlocked[0m
+2021/06/29 16:09:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (25): [0m
+2021/06/29 16:09:59 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 26: [0m
+2021/06/29 16:09:59 IDE --> textDocument/codeAction 26 [93m read-locked[0m
+2021/06/29 16:09:59 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:87)
+2021/06/29 16:09:59     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:87)
+2021/06/29 16:09:59 IDE --> textDocument/codeAction 26 sent to Clang
+2021/06/29 16:09:59 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 27: [0m
+2021/06/29 16:09:59 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 27 (27): [0m
+2021/06/29 16:09:59     <-- codeAction(0 elements)
+2021/06/29 16:09:59 <-- codeAction(0 elements)
+2021/06/29 16:09:59 IDE --> textDocument/codeAction 26 [93m read-unlocked[0m
+2021/06/29 16:09:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (26): [0m
+2021/06/29 16:10:01 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 27: [0m
+2021/06/29 16:10:01 IDE --> textDocument/codeAction 27 [93m read-locked[0m
+2021/06/29 16:10:01 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:30:3)
+2021/06/29 16:10:01     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:37:3)
+2021/06/29 16:10:01 IDE --> textDocument/codeAction 27 sent to Clang
+2021/06/29 16:10:01 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 28: [0m
+2021/06/29 16:10:01 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 28 (28): [0m
+2021/06/29 16:10:01     <-- codeAction(0 elements)
+2021/06/29 16:10:01 <-- codeAction(0 elements)
+2021/06/29 16:10:01 IDE --> textDocument/codeAction 27 [93m read-unlocked[0m
+2021/06/29 16:10:01 [91mIDE <-- LS     CL: ANSWER UNBOUND (27): [0m
+2021/06/29 16:10:01 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 28: [0m
+2021/06/29 16:10:01 IDE --> textDocument/documentHighlight 28 [93m read-locked[0m
+2021/06/29 16:10:01 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:43)
+2021/06/29 16:10:01     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:43)
+2021/06/29 16:10:01 IDE --> textDocument/documentHighlight 28 sent to Clang
+2021/06/29 16:10:01 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 29: [0m
+2021/06/29 16:10:01 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 29 (29): [0m
+2021/06/29 16:10:01 IDE --> textDocument/documentHighlight 28 [93m read-unlocked[0m
+2021/06/29 16:10:01 [91mIDE <-- LS     CL: ANSWER UNBOUND (28): [0m
+2021/06/29 16:10:02 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 29: [0m
+2021/06/29 16:10:02 IDE --> textDocument/documentHighlight 29 [93m read-locked[0m
+2021/06/29 16:10:02 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:87)
+2021/06/29 16:10:02     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:87)
+2021/06/29 16:10:02 IDE --> textDocument/documentHighlight 29 sent to Clang
+2021/06/29 16:10:02 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 30: [0m
+2021/06/29 16:10:02 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 30 (30): [0m
+2021/06/29 16:10:02 IDE --> textDocument/documentHighlight 29 [93m read-unlocked[0m
+2021/06/29 16:10:02 [91mIDE <-- LS     CL: ANSWER UNBOUND (29): [0m
+2021/06/29 16:10:02 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 30: [0m
+2021/06/29 16:10:02 IDE --> textDocument/codeAction 30 [93m read-locked[0m
+2021/06/29 16:10:02 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:87)
+2021/06/29 16:10:02     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:87)
+2021/06/29 16:10:02 IDE --> textDocument/codeAction 30 sent to Clang
+2021/06/29 16:10:02 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 31: [0m
+2021/06/29 16:10:02 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 31 (31): [0m
+2021/06/29 16:10:02     <-- codeAction(0 elements)
+2021/06/29 16:10:02 <-- codeAction(0 elements)
+2021/06/29 16:10:02 IDE --> textDocument/codeAction 30 [93m read-unlocked[0m
+2021/06/29 16:10:02 [91mIDE <-- LS     CL: ANSWER UNBOUND (30): [0m
+2021/06/29 16:10:03 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 31: [0m
+2021/06/29 16:10:03 IDE --> textDocument/codeAction 31 [93m read-locked[0m
+2021/06/29 16:10:03 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:23:39)
+2021/06/29 16:10:03     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:30:39)
+2021/06/29 16:10:03 IDE --> textDocument/codeAction 31 sent to Clang
+2021/06/29 16:10:03 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 32: [0m
+2021/06/29 16:10:03 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 32 (32): [0m
+2021/06/29 16:10:03     <-- codeAction(0 elements)
+2021/06/29 16:10:03 <-- codeAction(0 elements)
+2021/06/29 16:10:03 IDE --> textDocument/codeAction 31 [93m read-unlocked[0m
+2021/06/29 16:10:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (31): [0m
+2021/06/29 16:10:03 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 32: [0m
+2021/06/29 16:10:03 IDE --> textDocument/codeAction 32 [93m read-locked[0m
+2021/06/29 16:10:03 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:18:37)
+2021/06/29 16:10:03     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:25:37)
+2021/06/29 16:10:03 IDE --> textDocument/codeAction 32 sent to Clang
+2021/06/29 16:10:03 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 33: [0m
+2021/06/29 16:10:03 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 33 (33): [0m
+2021/06/29 16:10:04     <-- codeAction(0 elements)
+2021/06/29 16:10:04 <-- codeAction(0 elements)
+2021/06/29 16:10:04 IDE --> textDocument/codeAction 32 [93m read-unlocked[0m
+2021/06/29 16:10:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (32): [0m
+2021/06/29 16:10:05 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 33: [0m
+2021/06/29 16:10:05 IDE --> textDocument/codeAction 33 [93m read-locked[0m
+2021/06/29 16:10:05 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:87)
+2021/06/29 16:10:05     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:87)
+2021/06/29 16:10:05 IDE --> textDocument/codeAction 33 sent to Clang
+2021/06/29 16:10:05 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 34: [0m
+2021/06/29 16:10:05 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 34 (34): [0m
+2021/06/29 16:10:05     <-- codeAction(0 elements)
+2021/06/29 16:10:05 <-- codeAction(0 elements)
+2021/06/29 16:10:05 IDE --> textDocument/codeAction 33 [93m read-unlocked[0m
+2021/06/29 16:10:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (33): [0m
+2021/06/29 16:10:08 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 34: [0m
+2021/06/29 16:10:08 IDE --> textDocument/codeAction 34 [93m read-locked[0m
+2021/06/29 16:10:08 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:11:14)
+2021/06/29 16:10:08     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:18:14)
+2021/06/29 16:10:08 IDE --> textDocument/codeAction 34 sent to Clang
+2021/06/29 16:10:08 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 35: [0m
+2021/06/29 16:10:08 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 35 (35): [0m
+2021/06/29 16:10:08     <-- codeAction(0 elements)
+2021/06/29 16:10:08 <-- codeAction(0 elements)
+2021/06/29 16:10:08 IDE --> textDocument/codeAction 34 [93m read-unlocked[0m
+2021/06/29 16:10:08 [91mIDE <-- LS     CL: ANSWER UNBOUND (34): [0m
+2021/06/29 16:10:08 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 35: [0m
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 35 [93m read-locked[0m
+2021/06/29 16:10:08 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:87)
+2021/06/29 16:10:08     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:87)
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 35 sent to Clang
+2021/06/29 16:10:08 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 36: [0m
+2021/06/29 16:10:08 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 36 (36): [0m
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 35 [93m read-unlocked[0m
+2021/06/29 16:10:08 [91mIDE <-- LS     CL: ANSWER UNBOUND (35): [0m
+2021/06/29 16:10:08 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 36: [0m
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 36 [93m read-locked[0m
+2021/06/29 16:10:08 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:43)
+2021/06/29 16:10:08     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:43)
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 36 sent to Clang
+2021/06/29 16:10:08 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 37: [0m
+2021/06/29 16:10:08 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 37 (37): [0m
+2021/06/29 16:10:08 IDE --> textDocument/documentHighlight 36 [93m read-unlocked[0m
+2021/06/29 16:10:08 [91mIDE <-- LS     CL: ANSWER UNBOUND (36): [0m
+2021/06/29 16:10:09 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 37: [0m
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 37 [93m read-locked[0m
+2021/06/29 16:10:09 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:43)
+2021/06/29 16:10:09     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:43)
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 37 sent to Clang
+2021/06/29 16:10:09 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 38: [0m
+2021/06/29 16:10:09 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 38 (38): [0m
+2021/06/29 16:10:09     <-- codeAction(0 elements)
+2021/06/29 16:10:09 <-- codeAction(0 elements)
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 37 [93m read-unlocked[0m
+2021/06/29 16:10:09 [91mIDE <-- LS     CL: ANSWER UNBOUND (37): [0m
+2021/06/29 16:10:09 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 38: [0m
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 38 [93m read-locked[0m
+2021/06/29 16:10:09 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:28:30)
+2021/06/29 16:10:09     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:35:30)
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 38 sent to Clang
+2021/06/29 16:10:09 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 39: [0m
+2021/06/29 16:10:09 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 39 (39): [0m
+2021/06/29 16:10:09     <-- codeAction(0 elements)
+2021/06/29 16:10:09 <-- codeAction(0 elements)
+2021/06/29 16:10:09 IDE --> textDocument/codeAction 38 [93m read-unlocked[0m
+2021/06/29 16:10:09 [91mIDE <-- LS     CL: ANSWER UNBOUND (38): [0m
+2021/06/29 16:10:09 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 39: [0m
+2021/06/29 16:10:09 IDE --> textDocument/documentHighlight 39 [93m read-locked[0m
+2021/06/29 16:10:09 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:87)
+2021/06/29 16:10:09     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:87)
+2021/06/29 16:10:09 IDE --> textDocument/documentHighlight 39 sent to Clang
+2021/06/29 16:10:09 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 40: [0m
+2021/06/29 16:10:09 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 40 (40): [0m
+2021/06/29 16:10:09 IDE --> textDocument/documentHighlight 39 [93m read-unlocked[0m
+2021/06/29 16:10:09 [91mIDE <-- LS     CL: ANSWER UNBOUND (39): [0m
+2021/06/29 16:10:10 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 40: [0m
+2021/06/29 16:10:10 IDE --> textDocument/codeAction 40 [93m read-locked[0m
+2021/06/29 16:10:10 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:43:1)
+2021/06/29 16:10:10     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:50:1)
+2021/06/29 16:10:10 IDE --> textDocument/codeAction 40 sent to Clang
+2021/06/29 16:10:10 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 41: [0m
+2021/06/29 16:10:10 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 41 (41): [0m
+2021/06/29 16:10:10     <-- codeAction(0 elements)
+2021/06/29 16:10:10 <-- codeAction(0 elements)
+2021/06/29 16:10:10 IDE --> textDocument/codeAction 40 [93m read-unlocked[0m
+2021/06/29 16:10:10 [91mIDE <-- LS     CL: ANSWER UNBOUND (40): [0m
+2021/06/29 16:10:16 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 41: [0m
+2021/06/29 16:10:16 IDE --> textDocument/codeAction 41 [93m read-locked[0m
+2021/06/29 16:10:16 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:42:12)
+2021/06/29 16:10:16     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:49:12)
+2021/06/29 16:10:16 IDE --> textDocument/codeAction 41 sent to Clang
+2021/06/29 16:10:16 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 42: [0m
+2021/06/29 16:10:16 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 42 (42): [0m
+2021/06/29 16:10:16     <-- codeAction(0 elements)
+2021/06/29 16:10:16 <-- codeAction(0 elements)
+2021/06/29 16:10:16 IDE --> textDocument/codeAction 41 [93m read-unlocked[0m
+2021/06/29 16:10:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (41): [0m
+2021/06/29 16:10:17 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 42: [0m
+2021/06/29 16:10:17 IDE --> textDocument/codeAction 42 [93m read-locked[0m
+2021/06/29 16:10:17 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:38:3)
+2021/06/29 16:10:17     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:45:3)
+2021/06/29 16:10:17 IDE --> textDocument/codeAction 42 sent to Clang
+2021/06/29 16:10:17 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 43: [0m
+2021/06/29 16:10:17 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 43 (43): [0m
+2021/06/29 16:10:17     <-- codeAction(0 elements)
+2021/06/29 16:10:17 <-- codeAction(0 elements)
+2021/06/29 16:10:17 IDE --> textDocument/codeAction 42 [93m read-unlocked[0m
+2021/06/29 16:10:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (42): [0m
+2021/06/29 16:10:18 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 43: [0m
+2021/06/29 16:10:18 IDE --> textDocument/codeAction 43 [93m read-locked[0m
+2021/06/29 16:10:18 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:29)
+2021/06/29 16:10:18     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:29)
+2021/06/29 16:10:18 IDE --> textDocument/codeAction 43 sent to Clang
+2021/06/29 16:10:18 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 44: [0m
+2021/06/29 16:10:18 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 44 (44): [0m
+2021/06/29 16:10:18     <-- codeAction(0 elements)
+2021/06/29 16:10:18 <-- codeAction(0 elements)
+2021/06/29 16:10:18 IDE --> textDocument/codeAction 43 [93m read-unlocked[0m
+2021/06/29 16:10:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (43): [0m
+2021/06/29 16:10:19 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 44: [0m
+2021/06/29 16:10:19 IDE --> textDocument/codeAction 44 [93m read-locked[0m
+2021/06/29 16:10:19 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:43:1)
+2021/06/29 16:10:19     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:50:1)
+2021/06/29 16:10:19 IDE --> textDocument/codeAction 44 sent to Clang
+2021/06/29 16:10:19 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 45: [0m
+2021/06/29 16:10:19 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 45 (45): [0m
+2021/06/29 16:10:19     <-- codeAction(0 elements)
+2021/06/29 16:10:19 <-- codeAction(0 elements)
+2021/06/29 16:10:19 IDE --> textDocument/codeAction 44 [93m read-unlocked[0m
+2021/06/29 16:10:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (44): [0m
+2021/06/29 16:11:02 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 45: [0m
+2021/06/29 16:11:02 IDE --> textDocument/codeAction 45 [93m read-locked[0m
+2021/06/29 16:11:02 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:35:13)
+2021/06/29 16:11:02     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:42:13)
+2021/06/29 16:11:02 IDE --> textDocument/codeAction 45 sent to Clang
+2021/06/29 16:11:02 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 46: [0m
+2021/06/29 16:11:02 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 46 (46): [0m
+2021/06/29 16:11:02     <-- codeAction(0 elements)
+2021/06/29 16:11:02 <-- codeAction(0 elements)
+2021/06/29 16:11:02 IDE --> textDocument/codeAction 45 [93m read-unlocked[0m
+2021/06/29 16:11:02 [91mIDE <-- LS     CL: ANSWER UNBOUND (45): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 46: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 46 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:32:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:39:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 46 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 47: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 47 (47): [0m
+2021/06/29 16:11:03     URI: converted 39:11-39:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:11-32:18
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 46 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (46): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif11 [93m read-locked[0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif11 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif11 [93m read-unlocked[0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 47: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 47 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 47 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 48: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 48 (48): [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 47 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (47): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 48: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 48 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:29:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:36:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 48 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 49: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 49 (49): [0m
+2021/06/29 16:11:03     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:03     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:03     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:03     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 48 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (48): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 49: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 49 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:28:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:35:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 49 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 50: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 50 (50): [0m
+2021/06/29 16:11:03     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:11:03     URI: converted 21:2-21:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:2-14:10
+2021/06/29 16:11:03     URI: converted 22:2-22:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:2-15:10
+2021/06/29 16:11:03     URI: converted 25:14-25:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:14-18:22
+2021/06/29 16:11:03     URI: converted 30:11-30:19 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:11-23:19
+2021/06/29 16:11:03     URI: converted 35:6-35:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:6-28:14
+2021/06/29 16:11:03     URI: converted 39:2-39:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:2-32:10
+2021/06/29 16:11:03     URI: converted 44:4-44:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:4-37:12
+2021/06/29 16:11:03     URI: converted 46:6-46:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:6-39:14
+2021/06/29 16:11:03     URI: converted 47:17-47:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:17-40:25
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 49 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (49): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif12 [93m read-locked[0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif12 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif12 [93m read-unlocked[0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 50: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 50 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 50 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 51: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 51 (51): [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 50 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (50): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif13 [93m read-locked[0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif13 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif13 [93m read-unlocked[0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 51: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 51 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 51 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 52: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 52 (52): [0m
+2021/06/29 16:11:03     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:03     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:03     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:03     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 51 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (51): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 52: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 52 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:23:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:30:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 52 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 53: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 53 (53): [0m
+2021/06/29 16:11:03     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:11:03     URI: converted 21:2-21:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:2-14:10
+2021/06/29 16:11:03     URI: converted 22:2-22:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:2-15:10
+2021/06/29 16:11:03     URI: converted 25:14-25:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:14-18:22
+2021/06/29 16:11:03     URI: converted 30:11-30:19 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:11-23:19
+2021/06/29 16:11:03     URI: converted 35:6-35:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:6-28:14
+2021/06/29 16:11:03     URI: converted 39:2-39:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:2-32:10
+2021/06/29 16:11:03     URI: converted 44:4-44:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:4-37:12
+2021/06/29 16:11:03     URI: converted 46:6-46:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:6-39:14
+2021/06/29 16:11:03     URI: converted 47:17-47:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:17-40:25
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 52 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (52): [0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif14 [93m read-locked[0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif14 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:03 IDE --> $/cancelRequest notif14 [93m read-unlocked[0m
+2021/06/29 16:11:03 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 53: [0m
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 53 [93m read-locked[0m
+2021/06/29 16:11:03 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:21:13)
+2021/06/29 16:11:03     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:28:13)
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 53 sent to Clang
+2021/06/29 16:11:03 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 54: [0m
+2021/06/29 16:11:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 54 (54): [0m
+2021/06/29 16:11:03     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:03     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:03     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:03     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:03 IDE --> textDocument/documentHighlight 53 [93m read-unlocked[0m
+2021/06/29 16:11:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (53): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 54: [0m
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 54 [93m read-locked[0m
+2021/06/29 16:11:04 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:21:13)
+2021/06/29 16:11:04     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:28:13)
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 54 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 55: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 55 (55): [0m
+2021/06/29 16:11:04     <-- codeAction(0 elements)
+2021/06/29 16:11:04 <-- codeAction(0 elements)
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 54 [93m read-unlocked[0m
+2021/06/29 16:11:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (54): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 55: [0m
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 55 [93m read-locked[0m
+2021/06/29 16:11:04 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:20:13)
+2021/06/29 16:11:04     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:27:13)
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 55 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 56: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 56 (56): [0m
+2021/06/29 16:11:04     URI: converted 11:5-11:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:9:5-9:14
+2021/06/29 16:11:04     URI: converted 25:2-25:11 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:2-18:11
+2021/06/29 16:11:04     URI: converted 27:5-27:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:20:5-20:14
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 55 [93m read-unlocked[0m
+2021/06/29 16:11:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (55): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 56: [0m
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 56 [93m read-locked[0m
+2021/06/29 16:11:04 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:20:13)
+2021/06/29 16:11:04     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:27:13)
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 56 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 57: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 57 (57): [0m
+2021/06/29 16:11:04     <-- codeAction(0 elements)
+2021/06/29 16:11:04 <-- codeAction(0 elements)
+2021/06/29 16:11:04 IDE --> textDocument/codeAction 56 [93m read-unlocked[0m
+2021/06/29 16:11:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (56): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 57: [0m
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 57 [93m read-locked[0m
+2021/06/29 16:11:04 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:13)
+2021/06/29 16:11:04     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:13)
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 57 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 58: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 58 (58): [0m
+2021/06/29 16:11:04     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:04     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:04     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:04     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 57 [93m read-unlocked[0m
+2021/06/29 16:11:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (57): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif15 [93m read-locked[0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif15 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif15 [93m read-unlocked[0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 58: [0m
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 58 [93m read-locked[0m
+2021/06/29 16:11:04 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:15:13)
+2021/06/29 16:11:04     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:22:13)
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 58 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 59: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 59 (59): [0m
+2021/06/29 16:11:04     URI: converted 22:11-22:17 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:11-15:17
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 58 [93m read-unlocked[0m
+2021/06/29 16:11:04 [91mIDE <-- LS     CL: ANSWER UNBOUND (58): [0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif16 [93m read-locked[0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif16 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:04 IDE --> $/cancelRequest notif16 [93m read-unlocked[0m
+2021/06/29 16:11:04 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 59: [0m
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 59 [93m read-locked[0m
+2021/06/29 16:11:04 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:13)
+2021/06/29 16:11:04     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:13)
+2021/06/29 16:11:04 IDE --> textDocument/documentHighlight 59 sent to Clang
+2021/06/29 16:11:04 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 60: [0m
+2021/06/29 16:11:04 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 60 (60): [0m
+2021/06/29 16:11:05     URI: converted 21:11-21:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:11-14:16
+2021/06/29 16:11:05 IDE --> textDocument/documentHighlight 59 [93m read-unlocked[0m
+2021/06/29 16:11:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (59): [0m
+2021/06/29 16:11:05 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 60: [0m
+2021/06/29 16:11:05 IDE --> textDocument/codeAction 60 [93m read-locked[0m
+2021/06/29 16:11:05 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:13)
+2021/06/29 16:11:05     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:13)
+2021/06/29 16:11:05 IDE --> textDocument/codeAction 60 sent to Clang
+2021/06/29 16:11:05 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 61: [0m
+2021/06/29 16:11:05 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 61 (61): [0m
+2021/06/29 16:11:05     <-- codeAction(0 elements)
+2021/06/29 16:11:05 <-- codeAction(0 elements)
+2021/06/29 16:11:05 IDE --> textDocument/codeAction 60 [93m read-unlocked[0m
+2021/06/29 16:11:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (60): [0m
+2021/06/29 16:11:05 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 61: [0m
+2021/06/29 16:11:05 IDE --> textDocument/documentHighlight 61 [93m read-locked[0m
+2021/06/29 16:11:05 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:12:13)
+2021/06/29 16:11:05     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:19:13)
+2021/06/29 16:11:05 IDE --> textDocument/documentHighlight 61 sent to Clang
+2021/06/29 16:11:05 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 62: [0m
+2021/06/29 16:11:05 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 62 (62): [0m
+2021/06/29 16:11:05     URI: converted 19:9-19:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:9-12:14
+2021/06/29 16:11:05 IDE --> textDocument/documentHighlight 61 [93m read-unlocked[0m
+2021/06/29 16:11:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (61): [0m
+2021/06/29 16:11:05 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:05 IDE --> $/cancelRequest notif17 [93m read-locked[0m
+2021/06/29 16:11:05 IDE --> $/cancelRequest notif17 sent to Clang
+2021/06/29 16:11:05 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:05 IDE --> $/cancelRequest notif17 [93m read-unlocked[0m
+2021/06/29 16:11:06 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 62: [0m
+2021/06/29 16:11:06 IDE --> textDocument/documentHighlight 62 [93m read-locked[0m
+2021/06/29 16:11:06 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:9:13)
+2021/06/29 16:11:06     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:11:13)
+2021/06/29 16:11:06 IDE --> textDocument/documentHighlight 62 sent to Clang
+2021/06/29 16:11:06 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 63: [0m
+2021/06/29 16:11:06 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 63 (63): [0m
+2021/06/29 16:11:06     URI: converted 11:5-11:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:9:5-9:14
+2021/06/29 16:11:06     URI: converted 25:2-25:11 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:2-18:11
+2021/06/29 16:11:06     URI: converted 27:5-27:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:20:5-20:14
+2021/06/29 16:11:06 IDE --> textDocument/documentHighlight 62 [93m read-unlocked[0m
+2021/06/29 16:11:06 [91mIDE <-- LS     CL: ANSWER UNBOUND (62): [0m
+2021/06/29 16:11:06 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 63: [0m
+2021/06/29 16:11:06 IDE --> textDocument/codeAction 63 [93m read-locked[0m
+2021/06/29 16:11:06 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:9:13)
+2021/06/29 16:11:06     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:11:13)
+2021/06/29 16:11:06 IDE --> textDocument/codeAction 63 sent to Clang
+2021/06/29 16:11:06 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 64: [0m
+2021/06/29 16:11:06 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 64 (64): [0m
+2021/06/29 16:11:06     <-- codeAction(0 elements)
+2021/06/29 16:11:06 <-- codeAction(0 elements)
+2021/06/29 16:11:06 IDE --> textDocument/codeAction 63 [93m read-unlocked[0m
+2021/06/29 16:11:06 [91mIDE <-- LS     CL: ANSWER UNBOUND (63): [0m
+2021/06/29 16:11:07 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 64: [0m
+2021/06/29 16:11:07 IDE --> textDocument/documentHighlight 64 [93m read-locked[0m
+2021/06/29 16:11:07 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:13)
+2021/06/29 16:11:07     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:13)
+2021/06/29 16:11:07 IDE --> textDocument/documentHighlight 64 sent to Clang
+2021/06/29 16:11:07 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 65: [0m
+2021/06/29 16:11:07 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 65 (65): [0m
+2021/06/29 16:11:07 IDE --> textDocument/documentHighlight 64 [93m read-unlocked[0m
+2021/06/29 16:11:07 [91mIDE <-- LS     CL: ANSWER UNBOUND (64): [0m
+2021/06/29 16:11:07 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 65: [0m
+2021/06/29 16:11:07 IDE --> textDocument/codeAction 65 [93m read-locked[0m
+2021/06/29 16:11:07 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:13)
+2021/06/29 16:11:07     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:13)
+2021/06/29 16:11:07 IDE --> textDocument/codeAction 65 sent to Clang
+2021/06/29 16:11:07 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 66: [0m
+2021/06/29 16:11:07 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 66 (66): [0m
+2021/06/29 16:11:07     <-- codeAction(0 elements)
+2021/06/29 16:11:07 <-- codeAction(0 elements)
+2021/06/29 16:11:07 IDE --> textDocument/codeAction 65 [93m read-unlocked[0m
+2021/06/29 16:11:07 [91mIDE <-- LS     CL: ANSWER UNBOUND (65): [0m
+2021/06/29 16:11:08 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 66: [0m
+2021/06/29 16:11:08 IDE --> textDocument/codeAction 66 [93m read-locked[0m
+2021/06/29 16:11:08 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:7:13)
+2021/06/29 16:11:08     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:9:13)
+2021/06/29 16:11:08 IDE --> textDocument/codeAction 66 sent to Clang
+2021/06/29 16:11:08 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 67: [0m
+2021/06/29 16:11:08 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 67 (67): [0m
+2021/06/29 16:11:08     <-- codeAction(0 elements)
+2021/06/29 16:11:08 <-- codeAction(0 elements)
+2021/06/29 16:11:08 IDE --> textDocument/codeAction 66 [93m read-unlocked[0m
+2021/06/29 16:11:08 [91mIDE <-- LS     CL: ANSWER UNBOUND (66): [0m
+2021/06/29 16:11:11 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 67: [0m
+2021/06/29 16:11:11 IDE --> textDocument/documentHighlight 67 [93m read-locked[0m
+2021/06/29 16:11:11 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:13)
+2021/06/29 16:11:11     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:13)
+2021/06/29 16:11:11 IDE --> textDocument/documentHighlight 67 sent to Clang
+2021/06/29 16:11:11 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 68: [0m
+2021/06/29 16:11:11 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 68 (68): [0m
+2021/06/29 16:11:11 IDE --> textDocument/documentHighlight 67 [93m read-unlocked[0m
+2021/06/29 16:11:11 [91mIDE <-- LS     CL: ANSWER UNBOUND (67): [0m
+2021/06/29 16:11:11 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 68: [0m
+2021/06/29 16:11:11 IDE --> textDocument/codeAction 68 [93m read-locked[0m
+2021/06/29 16:11:11 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:13)
+2021/06/29 16:11:11     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:13)
+2021/06/29 16:11:11 IDE --> textDocument/codeAction 68 sent to Clang
+2021/06/29 16:11:11 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 69: [0m
+2021/06/29 16:11:11 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 69 (69): [0m
+2021/06/29 16:11:11     <-- codeAction(0 elements)
+2021/06/29 16:11:11 <-- codeAction(0 elements)
+2021/06/29 16:11:11 IDE --> textDocument/codeAction 68 [93m read-unlocked[0m
+2021/06/29 16:11:11 [91mIDE <-- LS     CL: ANSWER UNBOUND (68): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 69: [0m
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 69 [93m read-locked[0m
+2021/06/29 16:11:12 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:9:13)
+2021/06/29 16:11:12     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:11:13)
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 69 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 70: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 70 (70): [0m
+2021/06/29 16:11:12     URI: converted 11:5-11:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:9:5-9:14
+2021/06/29 16:11:12     URI: converted 25:2-25:11 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:2-18:11
+2021/06/29 16:11:12     URI: converted 27:5-27:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:20:5-20:14
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 69 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (69): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:12 IDE --> $/cancelRequest notif18 [93m read-locked[0m
+2021/06/29 16:11:12 IDE --> $/cancelRequest notif18 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:12 IDE --> $/cancelRequest notif18 [93m read-unlocked[0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 70: [0m
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 70 [93m read-locked[0m
+2021/06/29 16:11:12 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:12:13)
+2021/06/29 16:11:12     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:19:13)
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 70 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 71: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 71 (71): [0m
+2021/06/29 16:11:12     URI: converted 19:9-19:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:9-12:14
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 70 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (70): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 71: [0m
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 71 [93m read-locked[0m
+2021/06/29 16:11:12 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:13)
+2021/06/29 16:11:12     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:13)
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 71 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 72: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 72 (72): [0m
+2021/06/29 16:11:12     URI: converted 21:11-21:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:11-14:16
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 71 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (71): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 72: [0m
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 72 [93m read-locked[0m
+2021/06/29 16:11:12 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:15:13)
+2021/06/29 16:11:12     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:22:13)
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 72 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 73: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 73 (73): [0m
+2021/06/29 16:11:12     URI: converted 22:11-22:17 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:11-15:17
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 72 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (72): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 73: [0m
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 73 [93m read-locked[0m
+2021/06/29 16:11:12 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:13)
+2021/06/29 16:11:12     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:13)
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 73 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 74: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 74 (74): [0m
+2021/06/29 16:11:12     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:12     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:12     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:12     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:12 IDE --> textDocument/documentHighlight 73 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (73): [0m
+2021/06/29 16:11:12 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 74: [0m
+2021/06/29 16:11:12 IDE --> textDocument/codeAction 74 [93m read-locked[0m
+2021/06/29 16:11:12 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:13)
+2021/06/29 16:11:12     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:13)
+2021/06/29 16:11:12 IDE --> textDocument/codeAction 74 sent to Clang
+2021/06/29 16:11:12 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 75: [0m
+2021/06/29 16:11:12 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 75 (75): [0m
+2021/06/29 16:11:12     <-- codeAction(0 elements)
+2021/06/29 16:11:12 <-- codeAction(0 elements)
+2021/06/29 16:11:12 IDE --> textDocument/codeAction 74 [93m read-unlocked[0m
+2021/06/29 16:11:12 [91mIDE <-- LS     CL: ANSWER UNBOUND (74): [0m
+2021/06/29 16:11:13 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 75: [0m
+2021/06/29 16:11:13 IDE --> textDocument/codeAction 75 [93m read-locked[0m
+2021/06/29 16:11:13 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:18:13)
+2021/06/29 16:11:13     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:25:13)
+2021/06/29 16:11:13 IDE --> textDocument/codeAction 75 sent to Clang
+2021/06/29 16:11:13 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 76: [0m
+2021/06/29 16:11:13 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 76 (76): [0m
+2021/06/29 16:11:13     <-- codeAction(0 elements)
+2021/06/29 16:11:13 <-- codeAction(0 elements)
+2021/06/29 16:11:13 IDE --> textDocument/codeAction 75 [93m read-unlocked[0m
+2021/06/29 16:11:13 [91mIDE <-- LS     CL: ANSWER UNBOUND (75): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 76: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 76 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 76 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 77: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 77 (77): [0m
+2021/06/29 16:11:14     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:14     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:14     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:14     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 76 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (76): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif19 [93m read-locked[0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif19 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif19 [93m read-unlocked[0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 77: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 77 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:15:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:22:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 77 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 78: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 78 (78): [0m
+2021/06/29 16:11:14     URI: converted 22:11-22:17 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:11-15:17
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 77 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (77): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif20 [93m read-locked[0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif20 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:14 IDE --> $/cancelRequest notif20 [93m read-unlocked[0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 78: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 78 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 78 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 79: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 79 (79): [0m
+2021/06/29 16:11:14     URI: converted 21:11-21:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:11-14:16
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 78 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (78): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 79: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 79 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:12:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:19:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 79 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 80: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 80 (80): [0m
+2021/06/29 16:11:14     URI: converted 19:9-19:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:9-12:14
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 79 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (79): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 80: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 80 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:9:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:11:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 80 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 81: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 81 (81): [0m
+2021/06/29 16:11:14     URI: converted 11:5-11:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:9:5-9:14
+2021/06/29 16:11:14     URI: converted 25:2-25:11 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:2-18:11
+2021/06/29 16:11:14     URI: converted 27:5-27:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:20:5-20:14
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 80 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (80): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 81: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 81 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 81 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 82: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 82 (82): [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 81 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (81): [0m
+2021/06/29 16:11:14 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 82: [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 82 [93m read-locked[0m
+2021/06/29 16:11:14 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:6:13)
+2021/06/29 16:11:14     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:8:13)
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 82 sent to Clang
+2021/06/29 16:11:14 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 83: [0m
+2021/06/29 16:11:14 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 83 (83): [0m
+2021/06/29 16:11:14 IDE --> textDocument/documentHighlight 82 [93m read-unlocked[0m
+2021/06/29 16:11:14 [91mIDE <-- LS     CL: ANSWER UNBOUND (82): [0m
+2021/06/29 16:11:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 83: [0m
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 83 [93m read-locked[0m
+2021/06/29 16:11:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:13)
+2021/06/29 16:11:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:13)
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 83 sent to Clang
+2021/06/29 16:11:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 84: [0m
+2021/06/29 16:11:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 84 (84): [0m
+2021/06/29 16:11:15     URI: converted 7:8-7:15 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:5:8-5:15
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 83 [93m read-unlocked[0m
+2021/06/29 16:11:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (83): [0m
+2021/06/29 16:11:15 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 84: [0m
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 84 [93m read-locked[0m
+2021/06/29 16:11:15 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:13)
+2021/06/29 16:11:15     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:13)
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 84 sent to Clang
+2021/06/29 16:11:15 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 85: [0m
+2021/06/29 16:11:15 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 85 (85): [0m
+2021/06/29 16:11:15     <-- codeAction(0 elements)
+2021/06/29 16:11:15 <-- codeAction(0 elements)
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 84 [93m read-unlocked[0m
+2021/06/29 16:11:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (84): [0m
+2021/06/29 16:11:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 85: [0m
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 85 [93m read-locked[0m
+2021/06/29 16:11:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:4:13)
+2021/06/29 16:11:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:6:13)
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 85 sent to Clang
+2021/06/29 16:11:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 86: [0m
+2021/06/29 16:11:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 86 (86): [0m
+2021/06/29 16:11:15     URI: converted 6:7-6:13 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:4:7-4:13
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 85 [93m read-unlocked[0m
+2021/06/29 16:11:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (85): [0m
+2021/06/29 16:11:15 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 86: [0m
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 86 [93m read-locked[0m
+2021/06/29 16:11:15 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:4:13)
+2021/06/29 16:11:15     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:6:13)
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 86 sent to Clang
+2021/06/29 16:11:15 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 87: [0m
+2021/06/29 16:11:15 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 87 (87): [0m
+2021/06/29 16:11:15     <-- codeAction(0 elements)
+2021/06/29 16:11:15 <-- codeAction(0 elements)
+2021/06/29 16:11:15 IDE --> textDocument/codeAction 86 [93m read-unlocked[0m
+2021/06/29 16:11:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (86): [0m
+2021/06/29 16:11:15 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 87: [0m
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 87 [93m read-locked[0m
+2021/06/29 16:11:15 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:13)
+2021/06/29 16:11:15     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:13)
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 87 sent to Clang
+2021/06/29 16:11:15 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 88: [0m
+2021/06/29 16:11:15 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 88 (88): [0m
+2021/06/29 16:11:15     URI: converted 7:8-7:15 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:5:8-5:15
+2021/06/29 16:11:15 IDE --> textDocument/documentHighlight 87 [93m read-unlocked[0m
+2021/06/29 16:11:15 [91mIDE <-- LS     CL: ANSWER UNBOUND (87): [0m
+2021/06/29 16:11:16 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 88: [0m
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 88 [93m read-locked[0m
+2021/06/29 16:11:16 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:13)
+2021/06/29 16:11:16     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:13)
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 88 sent to Clang
+2021/06/29 16:11:16 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 89: [0m
+2021/06/29 16:11:16 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 89 (89): [0m
+2021/06/29 16:11:16     <-- codeAction(0 elements)
+2021/06/29 16:11:16 <-- codeAction(0 elements)
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 88 [93m read-unlocked[0m
+2021/06/29 16:11:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (88): [0m
+2021/06/29 16:11:16 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 89: [0m
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 89 [93m read-locked[0m
+2021/06/29 16:11:16 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:14)
+2021/06/29 16:11:16     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:14)
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 89 sent to Clang
+2021/06/29 16:11:16 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 90: [0m
+2021/06/29 16:11:16 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 90 (90): [0m
+2021/06/29 16:11:16     <-- codeAction(0 elements)
+2021/06/29 16:11:16 <-- codeAction(0 elements)
+2021/06/29 16:11:16 IDE --> textDocument/codeAction 89 [93m read-unlocked[0m
+2021/06/29 16:11:16 [91mIDE <-- LS     CL: ANSWER UNBOUND (89): [0m
+2021/06/29 16:11:17 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 90: [0m
+2021/06/29 16:11:17 IDE --> textDocument/documentHighlight 90 [93m read-locked[0m
+2021/06/29 16:11:17 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:16)
+2021/06/29 16:11:17     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:16)
+2021/06/29 16:11:17 IDE --> textDocument/documentHighlight 90 sent to Clang
+2021/06/29 16:11:17 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 91: [0m
+2021/06/29 16:11:17 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 91 (91): [0m
+2021/06/29 16:11:17 IDE --> textDocument/documentHighlight 90 [93m read-unlocked[0m
+2021/06/29 16:11:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (90): [0m
+2021/06/29 16:11:17 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 91: [0m
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 91 [93m read-locked[0m
+2021/06/29 16:11:17 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:17)
+2021/06/29 16:11:17     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:17)
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 91 sent to Clang
+2021/06/29 16:11:17 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 92: [0m
+2021/06/29 16:11:17 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 92 (92): [0m
+2021/06/29 16:11:17     <-- codeAction(0 elements)
+2021/06/29 16:11:17 <-- codeAction(0 elements)
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 91 [93m read-unlocked[0m
+2021/06/29 16:11:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (91): [0m
+2021/06/29 16:11:17 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 92: [0m
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 92 [93m read-locked[0m
+2021/06/29 16:11:17 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:18)
+2021/06/29 16:11:17     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:18)
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 92 sent to Clang
+2021/06/29 16:11:17 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 93: [0m
+2021/06/29 16:11:17 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 93 (93): [0m
+2021/06/29 16:11:17     <-- codeAction(0 elements)
+2021/06/29 16:11:17 <-- codeAction(0 elements)
+2021/06/29 16:11:17 IDE --> textDocument/codeAction 92 [93m read-unlocked[0m
+2021/06/29 16:11:17 [91mIDE <-- LS     CL: ANSWER UNBOUND (92): [0m
+2021/06/29 16:11:18 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 93: [0m
+2021/06/29 16:11:18 IDE --> textDocument/documentHighlight 93 [93m read-locked[0m
+2021/06/29 16:11:18 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:17)
+2021/06/29 16:11:18     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:17)
+2021/06/29 16:11:18 IDE --> textDocument/documentHighlight 93 sent to Clang
+2021/06/29 16:11:18 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 94: [0m
+2021/06/29 16:11:18 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 94 (94): [0m
+2021/06/29 16:11:18 IDE --> textDocument/documentHighlight 93 [93m read-unlocked[0m
+2021/06/29 16:11:18 [91mIDE <-- LS     CL: ANSWER UNBOUND (93): [0m
+2021/06/29 16:11:19 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 94: [0m
+2021/06/29 16:11:19 IDE --> textDocument/documentHighlight 94 [93m read-locked[0m
+2021/06/29 16:11:19 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:15)
+2021/06/29 16:11:19     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:15)
+2021/06/29 16:11:19 IDE --> textDocument/documentHighlight 94 sent to Clang
+2021/06/29 16:11:19 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 95: [0m
+2021/06/29 16:11:19 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 95 (95): [0m
+2021/06/29 16:11:19     URI: converted 7:8-7:15 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:5:8-5:15
+2021/06/29 16:11:19 IDE --> textDocument/documentHighlight 94 [93m read-unlocked[0m
+2021/06/29 16:11:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (94): [0m
+2021/06/29 16:11:19 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 95: [0m
+2021/06/29 16:11:19 IDE --> textDocument/codeAction 95 [93m read-locked[0m
+2021/06/29 16:11:19 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:15)
+2021/06/29 16:11:19     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:15)
+2021/06/29 16:11:19 IDE --> textDocument/codeAction 95 sent to Clang
+2021/06/29 16:11:19 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 96: [0m
+2021/06/29 16:11:19 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 96 (96): [0m
+2021/06/29 16:11:19     <-- codeAction(0 elements)
+2021/06/29 16:11:19 <-- codeAction(0 elements)
+2021/06/29 16:11:19 IDE --> textDocument/codeAction 95 [93m read-unlocked[0m
+2021/06/29 16:11:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (95): [0m
+2021/06/29 16:11:20 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 96: [0m
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 96 [93m read-locked[0m
+2021/06/29 16:11:20 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:14)
+2021/06/29 16:11:20     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:14)
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 96 sent to Clang
+2021/06/29 16:11:20 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 97: [0m
+2021/06/29 16:11:20 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 97 (97): [0m
+2021/06/29 16:11:20     <-- codeAction(0 elements)
+2021/06/29 16:11:20 <-- codeAction(0 elements)
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 96 [93m read-unlocked[0m
+2021/06/29 16:11:20 [91mIDE <-- LS     CL: ANSWER UNBOUND (96): [0m
+2021/06/29 16:11:20 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 97: [0m
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 97 [93m read-locked[0m
+2021/06/29 16:11:20 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:10)
+2021/06/29 16:11:20     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:10)
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 97 sent to Clang
+2021/06/29 16:11:20 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 98: [0m
+2021/06/29 16:11:20 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 98 (98): [0m
+2021/06/29 16:11:20     <-- codeAction(0 elements)
+2021/06/29 16:11:20 <-- codeAction(0 elements)
+2021/06/29 16:11:20 IDE --> textDocument/codeAction 97 [93m read-unlocked[0m
+2021/06/29 16:11:20 [91mIDE <-- LS     CL: ANSWER UNBOUND (97): [0m
+2021/06/29 16:11:21 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 98: [0m
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 98 [93m read-locked[0m
+2021/06/29 16:11:21 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:9)
+2021/06/29 16:11:21     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:9)
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 98 sent to Clang
+2021/06/29 16:11:21 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 99: [0m
+2021/06/29 16:11:21 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 99 (99): [0m
+2021/06/29 16:11:21     <-- codeAction(0 elements)
+2021/06/29 16:11:21 <-- codeAction(0 elements)
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 98 [93m read-unlocked[0m
+2021/06/29 16:11:21 [91mIDE <-- LS     CL: ANSWER UNBOUND (98): [0m
+2021/06/29 16:11:21 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 99: [0m
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 99 [93m read-locked[0m
+2021/06/29 16:11:21 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:5:8)
+2021/06/29 16:11:21     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:7:8)
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 99 sent to Clang
+2021/06/29 16:11:21 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 100: [0m
+2021/06/29 16:11:21 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 100 (100): [0m
+2021/06/29 16:11:21     <-- codeAction(0 elements)
+2021/06/29 16:11:21 <-- codeAction(0 elements)
+2021/06/29 16:11:21 IDE --> textDocument/codeAction 99 [93m read-unlocked[0m
+2021/06/29 16:11:21 [91mIDE <-- LS     CL: ANSWER UNBOUND (99): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 100: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 100 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:6:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:8:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 100 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 101: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 101 (101): [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 100 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (100): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 101: [0m
+2021/06/29 16:11:22 IDE --> textDocument/codeAction 101 [93m read-locked[0m
+2021/06/29 16:11:22 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:6:15)
+2021/06/29 16:11:22     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:8:15)
+2021/06/29 16:11:22 IDE --> textDocument/codeAction 101 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 102: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 102 (102): [0m
+2021/06/29 16:11:22     <-- codeAction(0 elements)
+2021/06/29 16:11:22 <-- codeAction(0 elements)
+2021/06/29 16:11:22 IDE --> textDocument/codeAction 101 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (101): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 102: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 102 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:7:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:9:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 102 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 103: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 103 (103): [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 102 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (102): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif21 [93m read-locked[0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif21 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif21 [93m read-unlocked[0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 103: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 103 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:8:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:10:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 103 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 104: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 104 (104): [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 103 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (103): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 104: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 104 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:12:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:19:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 104 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 105: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 105 (105): [0m
+2021/06/29 16:11:22     URI: converted 19:9-19:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:12:9-12:14
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 104 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (104): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 105: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 105 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:14:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:21:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 105 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 106: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 106 (106): [0m
+2021/06/29 16:11:22     URI: converted 21:11-21:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:11-14:16
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 105 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (105): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 106: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 106 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:15:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:22:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 106 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 107: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 107 (107): [0m
+2021/06/29 16:11:22     URI: converted 22:11-22:17 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:11-15:17
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 106 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (106): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 107: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 107 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:16:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:23:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 107 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 108: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 108 (108): [0m
+2021/06/29 16:11:22     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:22     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:22     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:22     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 107 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (107): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 108: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 108 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:18:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:25:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 108 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 109: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 109 (109): [0m
+2021/06/29 16:11:22     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:11:22     URI: converted 21:2-21:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:2-14:10
+2021/06/29 16:11:22     URI: converted 22:2-22:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:2-15:10
+2021/06/29 16:11:22     URI: converted 25:14-25:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:14-18:22
+2021/06/29 16:11:22     URI: converted 30:11-30:19 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:11-23:19
+2021/06/29 16:11:22     URI: converted 35:6-35:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:6-28:14
+2021/06/29 16:11:22     URI: converted 39:2-39:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:2-32:10
+2021/06/29 16:11:22     URI: converted 44:4-44:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:4-37:12
+2021/06/29 16:11:22     URI: converted 46:6-46:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:6-39:14
+2021/06/29 16:11:22     URI: converted 47:17-47:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:17-40:25
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 108 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (108): [0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif22 [93m read-locked[0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif22 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:22 IDE --> $/cancelRequest notif22 [93m read-unlocked[0m
+2021/06/29 16:11:22 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 109: [0m
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 109 [93m read-locked[0m
+2021/06/29 16:11:22 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:21:15)
+2021/06/29 16:11:22     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:28:15)
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 109 sent to Clang
+2021/06/29 16:11:22 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 110: [0m
+2021/06/29 16:11:22 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 110 (110): [0m
+2021/06/29 16:11:22     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:22     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:22     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:22     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:22 IDE --> textDocument/documentHighlight 109 [93m read-unlocked[0m
+2021/06/29 16:11:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (109): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 110: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 110 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:23:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:30:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 110 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 111: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 111 (111): [0m
+2021/06/29 16:11:23     URI: converted 4:16-4:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:2:16-2:24
+2021/06/29 16:11:23     URI: converted 21:2-21:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:14:2-14:10
+2021/06/29 16:11:23     URI: converted 22:2-22:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:15:2-15:10
+2021/06/29 16:11:23     URI: converted 25:14-25:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:18:14-18:22
+2021/06/29 16:11:23     URI: converted 30:11-30:19 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:23:11-23:19
+2021/06/29 16:11:23     URI: converted 35:6-35:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:6-28:14
+2021/06/29 16:11:23     URI: converted 39:2-39:10 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:2-32:10
+2021/06/29 16:11:23     URI: converted 44:4-44:12 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:4-37:12
+2021/06/29 16:11:23     URI: converted 46:6-46:14 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:6-39:14
+2021/06/29 16:11:23     URI: converted 47:17-47:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:17-40:25
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 110 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (110): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif23 [93m read-locked[0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif23 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif23 [93m read-unlocked[0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 111: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 111 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:24:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:31:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 111 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 112: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 112 (112): [0m
+2021/06/29 16:11:23     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:23     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:23     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:23     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 111 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (111): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif24 [93m read-locked[0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif24 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:23 IDE --> $/cancelRequest notif24 [93m read-unlocked[0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 112: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 112 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:27:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:34:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 112 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 113: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 113 (113): [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 112 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (112): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 113: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 113 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:28:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:35:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 113 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 114: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 114 (114): [0m
+2021/06/29 16:11:23     URI: converted 35:15-35:25 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:28:15-28:25
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 113 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (113): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 114: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 114 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:29:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:36:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 114 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 115: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 115 (115): [0m
+2021/06/29 16:11:23     URI: converted 23:9-23:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:16:9-16:16
+2021/06/29 16:11:23     URI: converted 28:11-28:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:21:11-21:18
+2021/06/29 16:11:23     URI: converted 31:13-31:20 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:24:13-24:20
+2021/06/29 16:11:23     URI: converted 36:11-36:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:29:11-29:18
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 114 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (114): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 115: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 115 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:31:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:38:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 115 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 116: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 116 (116): [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 115 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (115): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 116: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 116 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:32:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:39:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 116 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 117: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 117 (117): [0m
+2021/06/29 16:11:23     URI: converted 39:11-39:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:32:11-32:18
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 116 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (116): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 117: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 117 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:36:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:43:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 117 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 118: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 118 (118): [0m
+2021/06/29 16:11:23     URI: converted 43:13-43:22 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:36:13-36:22
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 117 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (117): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 118: [0m
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 118 [93m read-locked[0m
+2021/06/29 16:11:23 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:37:15)
+2021/06/29 16:11:23     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:44:15)
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 118 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 119: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 119 (119): [0m
+2021/06/29 16:11:23     URI: converted 44:13-44:18 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:37:13-37:18
+2021/06/29 16:11:23 IDE --> textDocument/documentHighlight 118 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (118): [0m
+2021/06/29 16:11:23 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 119: [0m
+2021/06/29 16:11:23 IDE --> textDocument/codeAction 119 [93m read-locked[0m
+2021/06/29 16:11:23 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:38:3)
+2021/06/29 16:11:23     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:45:3)
+2021/06/29 16:11:23 IDE --> textDocument/codeAction 119 sent to Clang
+2021/06/29 16:11:23 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 120: [0m
+2021/06/29 16:11:23 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 120 (120): [0m
+2021/06/29 16:11:23     <-- codeAction(0 elements)
+2021/06/29 16:11:23 <-- codeAction(0 elements)
+2021/06/29 16:11:23 IDE --> textDocument/codeAction 119 [93m read-unlocked[0m
+2021/06/29 16:11:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (119): [0m
+2021/06/29 16:11:24 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 120: [0m
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 120 [93m read-locked[0m
+2021/06/29 16:11:24 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:15)
+2021/06/29 16:11:24     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:15)
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 120 sent to Clang
+2021/06/29 16:11:24 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 121: [0m
+2021/06/29 16:11:24 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 121 (121): [0m
+2021/06/29 16:11:24     URI: converted 46:15-46:24 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:39:15-39:24
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 120 [93m read-unlocked[0m
+2021/06/29 16:11:24 [91mIDE <-- LS     CL: ANSWER UNBOUND (120): [0m
+2021/06/29 16:11:24 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 121: [0m
+2021/06/29 16:11:24 IDE --> textDocument/codeAction 121 [93m read-locked[0m
+2021/06/29 16:11:24 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:39:15)
+2021/06/29 16:11:24     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:46:15)
+2021/06/29 16:11:24 IDE --> textDocument/codeAction 121 sent to Clang
+2021/06/29 16:11:24 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 122: [0m
+2021/06/29 16:11:24 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 122 (122): [0m
+2021/06/29 16:11:24     <-- codeAction(0 elements)
+2021/06/29 16:11:24 <-- codeAction(0 elements)
+2021/06/29 16:11:24 IDE --> textDocument/codeAction 121 [93m read-unlocked[0m
+2021/06/29 16:11:24 [91mIDE <-- LS     CL: ANSWER UNBOUND (121): [0m
+2021/06/29 16:11:24 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 122: [0m
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 122 [93m read-locked[0m
+2021/06/29 16:11:24 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:40:15)
+2021/06/29 16:11:24     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:47:15)
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 122 sent to Clang
+2021/06/29 16:11:24 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 123: [0m
+2021/06/29 16:11:24 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 123 (123): [0m
+2021/06/29 16:11:24     URI: converted 47:11-47:16 to C:\Users\Juchani\Documents\Arduino\bt esp32\bt_esp32\bt_esp32.ino:40:11-40:16
+2021/06/29 16:11:24 IDE --> textDocument/documentHighlight 122 [93m read-unlocked[0m
+2021/06/29 16:11:24 [91mIDE <-- LS     CL: ANSWER UNBOUND (122): [0m
+2021/06/29 16:11:24 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:24 IDE --> $/cancelRequest notif25 [93m read-locked[0m
+2021/06/29 16:11:24 IDE --> $/cancelRequest notif25 sent to Clang
+2021/06/29 16:11:24 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/29 16:11:24 IDE --> $/cancelRequest notif25 [93m read-unlocked[0m
+2021/06/29 16:11:25 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 123: [0m
+2021/06/29 16:11:25 IDE --> textDocument/codeAction 123 [93m read-locked[0m
+2021/06/29 16:11:25 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino:43:1)
+2021/06/29 16:11:25     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server266500963/sketch/bt_esp32.ino.cpp:50:1)
+2021/06/29 16:11:25 IDE --> textDocument/codeAction 123 sent to Clang
+2021/06/29 16:11:25 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 124: [0m
+2021/06/29 16:11:25 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 124 (124): [0m
+2021/06/29 16:11:25     <-- codeAction(0 elements)
+2021/06/29 16:11:25 <-- codeAction(0 elements)
+2021/06/29 16:11:25 IDE --> textDocument/codeAction 123 [93m read-unlocked[0m
+2021/06/29 16:11:25 [91mIDE <-- LS     CL: ANSWER UNBOUND (123): [0m
+2021/06/29 18:33:29 [92mIDE --> LS     CL: REQUEST shutdown 124: [0m
+2021/06/29 18:33:29 IDE --> shutdown 124 [93m read-locked[0m
+2021/06/29 18:33:29 IDE --> shutdown 124 sent to Clang
+2021/06/29 18:33:29 [91mIDE     LS --> CL: REQUEST shutdown 125: [0m
+2021/06/29 18:33:29 [92mIDE     LS <-- CL: ANSWER shutdown 125 (125): [0m
+2021/06/29 18:33:29 IDE --> shutdown 124 [93m read-unlocked[0m
+2021/06/29 18:33:29 [91mIDE <-- LS     CL: ANSWER UNBOUND (124): [0m
+2021/06/29 18:33:29 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/29 18:33:29 IDE --> exit notif26 [93m read-locked[0m
+2021/06/29 18:33:29 IDE --> exit notif26 sent to Clang
+2021/06/29 18:33:29 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/29 18:33:29 IDE --> exit notif26 [93m read-unlocked[0m

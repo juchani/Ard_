@@ -1,0 +1,1280 @@
+
+
+
+
+
+
+
+Started logging.
+2021/06/25 00:09:33 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols.log
+2021/06/25 00:09:33 Initial board configuration: {"Arduino Uno" arduino:avr:uno}
+2021/06/25 00:09:33 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server052968867
+2021/06/25 00:09:33 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server052968867\sketch
+2021/06/25 00:09:33 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/25 00:09:33 IDE --> initialize 0 [93m locked[0m
+2021/06/25 00:09:33 IDE --> initialize 0 [93m unlocked[0m
+2021/06/25 00:09:33 INIT--- initializing workbench
+2021/06/25 00:09:33 INIT--- [93m locked[0m
+2021/06/25 00:09:33 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/25 00:09:33     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART)
+2021/06/25 00:09:33 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/25 00:09:33 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn arduino:avr:uno --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\928595110 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server052968867 --format json C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART
+2021/06/25 00:09:58 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server052968867",
+    "used_libraries": [
+      {
+        "name": "SoftwareSerial",
+        "author": "Arduino",
+        "maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+        "sentence": "Enables serial communication on any digital pin.",
+        "paragraph": "The SoftwareSerial library has been developed to allow serial communication on any digital pin of the board, using software to replicate the functionality of the hardware UART. It is possible to have multiple software serial ports with speeds up to 115200 bps.",
+        "website": "http://www.arduino.cc/en/Reference/SoftwareSerial",
+        "category": "Communication",
+        "architectures": [
+          "avr"
+        ],
+        "install_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial",
+        "source_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\src",
+        "container_platform": "arduino:avr@1.8.3",
+        "real_name": "SoftwareSerial",
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\SoftwareSerialExample",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\TwoPortReceive"
+        ],
+        "provides_includes": [
+          "SoftwareSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/25 00:09:58 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/25 00:09:59 Arduino Data Dir ->  C:\Users\Juchani\AppData\Local\Arduino15
+2021/06/25 00:09:59     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server052968867 -query-driver=C:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/25 00:09:59 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd.log
+2021/06/25 00:09:59 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd-err.log
+2021/06/25 00:09:59 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/25 00:10:00 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/25 00:10:00 INIT--- initializing workbench (done)
+2021/06/25 00:10:00 INIT--- [93m unlocked[0m
+2021/06/25 00:10:00 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/25 00:10:00 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/25 00:10:00 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/25 00:10:00 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino@1 as 'cpp')
+2021/06/25 00:10:00     increasing .ino tracked files count: 1
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server052968867/sketch/PRUEBA_RS232_UART.ino.cpp@1 as 'cpp')
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/25 00:10:00 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/25 00:10:00 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/25 00:10:00 SYLD--- [93m read-locked[0m
+2021/06/25 00:10:00 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/25 00:10:00 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/25 00:10:00 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:7:13)
+2021/06/25 00:10:00 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server052968867/sketch/PRUEBA_RS232_UART.ino.cpp
+2021/06/25 00:10:00 SYLD--- [93m read-unlocked[0m
+2021/06/25 00:10:00 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/25 00:10:00     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server052968867/sketch/PRUEBA_RS232_UART.ino.cpp:14:13)
+2021/06/25 00:10:00 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/25 00:10:00 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 00:10:00 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/25 00:10:00 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/24 0%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/24 0%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/24 0%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/24 0%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/24 4.166666666666667%[0m
+2021/06/25 00:10:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/24 4.166666666666667%[0m
+2021/06/25 00:10:03 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/25 00:10:03 CLG <-- textDocument/publishDiagnostics notif9 (queued)
+2021/06/25 00:10:03 CLG <-- textDocument/publishDiagnostics notif9 [93m read-locked[0m
+2021/06/25 00:10:03 CLG <-- textDocument/publishDiagnostics notif9 (running)
+2021/06/25 00:10:03 CLG <-- textDocument/publishDiagnostics notif9 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server052968867/sketch/PRUEBA_RS232_UART.ino.cpp):
+2021/06/25 00:10:03 CLG <-- textDocument/publishDiagnostics notif9 [93m read-unlocked[0m
+2021/06/25 00:10:03 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/25 00:10:03 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/25 00:10:03 SYLD--- [93m read-locked[0m
+2021/06/25 00:10:03 SYLD---    symbol: Function setup 5:0-5:12
+2021/06/25 00:10:03 SYLD---             > void setup()
+2021/06/25 00:10:03 SYLD---    symbol: Function loop 7:0-7:11
+2021/06/25 00:10:03 SYLD---             > void loop()
+2021/06/25 00:10:03 SYLD---    symbol: Function setup 9:0-12:1
+2021/06/25 00:10:03 SYLD---      TRIMMED> void setup() 
+2021/06/25 00:10:03 SYLD---    symbol: Function loop 14:0-17:1
+2021/06/25 00:10:03 SYLD---      TRIMMED> void loop() 
+2021/06/25 00:10:03 SYLD--- [93m read-unlocked[0m
+2021/06/25 00:10:03 SYLD--- (done)
+2021/06/25 00:10:03     <-- codeAction(0 elements)
+2021/06/25 00:10:03 <-- codeAction(0 elements)
+2021/06/25 00:10:03 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/25 00:10:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/25 00:10:03 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/25 00:10:03 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 00:10:03 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/24 4.166666666666667%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/24 8.333333333333334%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/24 8.333333333333334%[0m
+2021/06/25 00:10:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/24 8.333333333333334%[0m
+2021/06/25 00:10:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/24 8.333333333333334%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/24 12.5%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/24 12.5%[0m
+2021/06/25 00:10:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/24 12.5%[0m
+2021/06/25 00:10:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/24 12.5%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/24 16.666666666666668%[0m
+2021/06/25 00:10:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/24 16.666666666666668%[0m
+2021/06/25 00:10:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/24 16.666666666666668%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/24 20.833333333333332%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/24 20.833333333333332%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/24 20.833333333333332%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/24 20.833333333333332%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/24 25%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/24 25%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/24 25%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/24 25%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/24 29.166666666666668%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/24 29.166666666666668%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/24 29.166666666666668%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/24 33.333333333333336%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/24 33.333333333333336%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/24 33.333333333333336%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/24 33.333333333333336%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/24 37.5%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/24 37.5%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/24 37.5%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/24 37.5%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/24 41.666666666666664%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/24 41.666666666666664%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/24 41.666666666666664%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/24 41.666666666666664%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/24 45.833333333333336%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/24 45.833333333333336%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/24 45.833333333333336%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/24 50%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/24 50%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/24 50%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/24 50%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/24 54.166666666666664%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/24 54.166666666666664%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/24 54.166666666666664%[0m
+2021/06/25 00:10:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/24 54.166666666666664%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/24 58.333333333333336%[0m
+2021/06/25 00:10:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/24 58.333333333333336%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/24 58.333333333333336%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/24 62.5%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/24 62.5%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/24 62.5%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/24 66.66666666666667%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/24 66.66666666666667%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/24 66.66666666666667%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/24 66.66666666666667%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/24 70.83333333333333%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/24 70.83333333333333%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/24 70.83333333333333%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/24 75%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/24 75%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/24 75%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/24 75%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/24 79.16666666666667%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/24 79.16666666666667%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/24 79.16666666666667%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/24 83.33333333333333%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/24 83.33333333333333%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/24 83.33333333333333%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/24 87.5%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/24 87.5%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/24 91.66666666666667%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/24 91.66666666666667%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/24 95.83333333333333%[0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/24 95.83333333333333%[0m
+2021/06/25 00:10:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 00:10:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 00:10:57 [92mIDE --> LS     CL: NOTIFICATION $/setTraceNotification: [0m
+2021/06/25 00:10:57 IDE --> $/setTraceNotification notif3 [93m read-locked[0m
+2021/06/25 00:10:57 IDE --> $/setTraceNotification notif3 sent to Clang
+2021/06/25 00:10:57 [91mIDE     LS --> CL: NOTIFICATION $/setTraceNotification: [0m
+2021/06/25 00:10:57 IDE --> $/setTraceNotification notif3 [93m read-unlocked[0m
+2021/06/25 00:10:58 [92mIDE --> LS     CL: NOTIFICATION $/setTraceNotification: [0m
+2021/06/25 00:10:58 IDE --> $/setTraceNotification notif4 [93m read-locked[0m
+2021/06/25 00:10:58 IDE --> $/setTraceNotification notif4 sent to Clang
+2021/06/25 00:10:58 [91mIDE     LS --> CL: NOTIFICATION $/setTraceNotification: [0m
+2021/06/25 00:10:58 IDE --> $/setTraceNotification notif4 [93m read-unlocked[0m
+2021/06/25 00:34:25 [92mIDE --> LS     CL: REQUEST textDocument/hover 2: [0m
+2021/06/25 00:34:25 IDE --> textDocument/hover 2 [93m read-locked[0m
+2021/06/25 00:34:25 --> hover(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:4:10)
+2021/06/25 00:34:25     --> hover(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server052968867/sketch/PRUEBA_RS232_UART.ino.cpp:11:10)
+2021/06/25 00:34:25 IDE --> textDocument/hover 2 sent to Clang
+2021/06/25 00:34:25 [91mIDE     LS --> CL: REQUEST textDocument/hover 3: [0m
+2021/06/25 00:34:29 [92mIDE     LS <-- CL: ANSWER textDocument/hover 3 (3): [0m
+2021/06/25 00:34:29 <-- hover("### instance-method `begin`  \n\n---\n→ `void`  \nParameters:  \n- `long speed`\n\n---\n```cpp\n// In SoftwareSerial\npublic: void begin(long speed)\n```")
+2021/06/25 00:34:29 IDE --> textDocument/hover 2 [93m read-unlocked[0m
+2021/06/25 00:34:29 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/25 00:34:29 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 00:34:29 IDE --> $/cancelRequest notif5 [93m read-locked[0m
+2021/06/25 00:34:29 IDE --> $/cancelRequest notif5 sent to Clang
+2021/06/25 00:34:29 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 00:34:29 IDE --> $/cancelRequest notif5 [93m read-unlocked[0m
+2021/06/25 00:35:23 [92mIDE --> LS     CL: REQUEST shutdown 3: [0m
+2021/06/25 00:35:23 IDE --> shutdown 3 [93m read-locked[0m
+2021/06/25 00:35:23 IDE --> shutdown 3 sent to Clang
+2021/06/25 00:35:23 [91mIDE     LS --> CL: REQUEST shutdown 4: [0m
+2021/06/25 00:35:23 [92mIDE     LS <-- CL: ANSWER shutdown 4 (4): [0m
+2021/06/25 00:35:23 IDE --> shutdown 3 [93m read-unlocked[0m
+2021/06/25 00:35:23 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/25 00:35:23 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/25 00:35:23 IDE --> exit notif6 [93m read-locked[0m
+2021/06/25 00:35:23 IDE --> exit notif6 sent to Clang
+2021/06/25 00:35:23 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/25 00:35:23 IDE --> exit notif6 [93m read-unlocked[0m
+2021/06/25 00:35:25 Lost connection with clangd!
+2021/06/25 00:35:25 removing buildpath
+
+
+
+
+
+
+
+Started logging.
+2021/06/25 00:35:34 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols.log
+2021/06/25 00:35:34 Initial board configuration: {"Arduino Nano" arduino:avr:nano}
+2021/06/25 00:35:34 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server615991391
+2021/06/25 00:35:34 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server615991391\sketch
+2021/06/25 00:35:34 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/25 00:35:34 IDE --> initialize 0 [93m locked[0m
+2021/06/25 00:35:34 IDE --> initialize 0 [93m unlocked[0m
+2021/06/25 00:35:34 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/25 00:35:34 INIT--- initializing workbench
+2021/06/25 00:35:34 INIT--- [93m locked[0m
+2021/06/25 00:35:34     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART)
+2021/06/25 00:35:34 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/25 00:35:34 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn arduino:avr:nano --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\210435634 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server615991391 --format json C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART
+2021/06/25 00:36:16 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server615991391",
+    "used_libraries": [
+      {
+        "name": "SoftwareSerial",
+        "author": "Arduino",
+        "maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+        "sentence": "Enables serial communication on any digital pin.",
+        "paragraph": "The SoftwareSerial library has been developed to allow serial communication on any digital pin of the board, using software to replicate the functionality of the hardware UART. It is possible to have multiple software serial ports with speeds up to 115200 bps.",
+        "website": "http://www.arduino.cc/en/Reference/SoftwareSerial",
+        "category": "Communication",
+        "architectures": [
+          "avr"
+        ],
+        "install_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial",
+        "source_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\src",
+        "container_platform": "arduino:avr@1.8.3",
+        "real_name": "SoftwareSerial",
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\SoftwareSerialExample",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\TwoPortReceive"
+        ],
+        "provides_includes": [
+          "SoftwareSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/25 00:36:17 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/25 00:36:17 Arduino Data Dir ->  C:\Users\Juchani\AppData\Local\Arduino15
+2021/06/25 00:36:17     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server615991391 -query-driver=C:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/25 00:36:17 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd.log
+2021/06/25 00:36:17 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd-err.log
+2021/06/25 00:36:17 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/25 00:36:18 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/25 00:36:18 INIT--- initializing workbench (done)
+2021/06/25 00:36:18 INIT--- [93m unlocked[0m
+2021/06/25 00:36:18 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/25 00:36:18 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/25 00:36:18 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/25 00:36:18 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino@1 as 'cpp')
+2021/06/25 00:36:18     increasing .ino tracked files count: 1
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp@1 as 'cpp')
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/25 00:36:18 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/25 00:36:18 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/25 00:36:18 SYLD--- [93m read-locked[0m
+2021/06/25 00:36:18 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp
+2021/06/25 00:36:18 SYLD--- [93m read-unlocked[0m
+2021/06/25 00:36:18 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/25 00:36:18 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/25 00:36:18 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/25 00:36:18 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:7:13)
+2021/06/25 00:36:18     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp:14:13)
+2021/06/25 00:36:18 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/25 00:36:18 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 00:36:18 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/25 00:36:18 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/28 0%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/28 0%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/28 0%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/28 3.5714285714285716%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/28 3.5714285714285716%[0m
+2021/06/25 00:36:18 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/28 3.5714285714285716%[0m
+2021/06/25 00:36:19 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/25 00:36:19 CLG <-- textDocument/publishDiagnostics notif9 (queued)
+2021/06/25 00:36:19 CLG <-- textDocument/publishDiagnostics notif9 [93m read-locked[0m
+2021/06/25 00:36:19 CLG <-- textDocument/publishDiagnostics notif9 (running)
+2021/06/25 00:36:19 CLG <-- textDocument/publishDiagnostics notif9 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp):
+2021/06/25 00:36:19 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/25 00:36:19 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/25 00:36:19 SYLD--- [93m read-locked[0m
+2021/06/25 00:36:19 SYLD---    symbol: Function setup 5:0-5:12
+2021/06/25 00:36:19 SYLD---             > void setup()
+2021/06/25 00:36:19 SYLD---    symbol: Function loop 7:0-7:11
+2021/06/25 00:36:19 SYLD---             > void loop()
+2021/06/25 00:36:19 SYLD---    symbol: Function setup 9:0-12:1
+2021/06/25 00:36:19 SYLD---      TRIMMED> void setup() 
+2021/06/25 00:36:19 SYLD---    symbol: Function loop 14:0-17:1
+2021/06/25 00:36:19 SYLD---      TRIMMED> void loop() 
+2021/06/25 00:36:19 SYLD--- [93m read-unlocked[0m
+2021/06/25 00:36:19 SYLD--- (done)
+2021/06/25 00:36:19 CLG <-- textDocument/publishDiagnostics notif9 [93m read-unlocked[0m
+2021/06/25 00:36:19     <-- codeAction(0 elements)
+2021/06/25 00:36:19 <-- codeAction(0 elements)
+2021/06/25 00:36:19 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/25 00:36:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/25 00:36:19 [92mIDE --> LS     CL: REQUEST textDocument/hover 2: [0m
+2021/06/25 00:36:19 IDE --> textDocument/hover 2 [93m read-locked[0m
+2021/06/25 00:36:19 --> hover(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:3)
+2021/06/25 00:36:19     --> hover(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp:15:3)
+2021/06/25 00:36:19 IDE --> textDocument/hover 2 sent to Clang
+2021/06/25 00:36:19 [91mIDE     LS --> CL: REQUEST textDocument/hover 3: [0m
+2021/06/25 00:36:19 [92mIDE     LS <-- CL: ANSWER textDocument/hover 3 (3): [0m
+2021/06/25 00:36:19 <-- hover("### variable `rs232`  \n\n---\nType: `class SoftwareSerial`  \nrx-tx  \n\n---\n```cpp\nSoftwareSerial rs232(27, 26)\n```")
+2021/06/25 00:36:19 IDE --> textDocument/hover 2 [93m read-unlocked[0m
+2021/06/25 00:36:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/25 00:36:19 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 00:36:19 IDE --> $/cancelRequest notif3 [93m read-locked[0m
+2021/06/25 00:36:19 IDE --> $/cancelRequest notif3 sent to Clang
+2021/06/25 00:36:19 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 00:36:19 IDE --> $/cancelRequest notif3 [93m read-unlocked[0m
+2021/06/25 00:36:19 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/25 00:36:19 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 00:36:19 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/28 3.5714285714285716%[0m
+2021/06/25 00:36:20 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/28 7.142857142857143%[0m
+2021/06/25 00:36:20 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/28 7.142857142857143%[0m
+2021/06/25 00:36:20 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/28 7.142857142857143%[0m
+2021/06/25 00:36:20 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/28 7.142857142857143%[0m
+2021/06/25 00:36:25 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/28 10.714285714285714%[0m
+2021/06/25 00:36:25 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/28 10.714285714285714%[0m
+2021/06/25 00:36:25 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/28 10.714285714285714%[0m
+2021/06/25 00:36:25 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/28 10.714285714285714%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/28 14.285714285714286%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/28 14.285714285714286%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/28 14.285714285714286%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/28 17.857142857142858%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/28 17.857142857142858%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/28 17.857142857142858%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/28 17.857142857142858%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/28 21.428571428571427%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/28 21.428571428571427%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/28 21.428571428571427%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/28 21.428571428571427%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/28 25%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/28 25%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/28 25%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/28 25%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/28 28.571428571428573%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/28 28.571428571428573%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/28 28.571428571428573%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/28 28.571428571428573%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/28 32.142857142857146%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/28 32.142857142857146%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/28 32.142857142857146%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/28 32.142857142857146%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/28 35.714285714285715%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/28 35.714285714285715%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/28 35.714285714285715%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/28 35.714285714285715%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/28 39.285714285714285%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/28 39.285714285714285%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/28 39.285714285714285%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/28 39.285714285714285%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/28 42.857142857142854%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/28 42.857142857142854%[0m
+2021/06/25 00:36:26 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/28 42.857142857142854%[0m
+2021/06/25 00:36:26 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/28 42.857142857142854%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/28 46.42857142857143%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/28 46.42857142857143%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/28 46.42857142857143%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/28 50%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/28 50%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/28 50%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/28 53.57142857142857%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/28 53.57142857142857%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/28 53.57142857142857%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/28 53.57142857142857%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/28 57.142857142857146%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/28 57.142857142857146%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/28 57.142857142857146%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/28 57.142857142857146%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/28 60.714285714285715%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/28 60.714285714285715%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/28 60.714285714285715%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/28 60.714285714285715%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/28 64.28571428571429%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/28 64.28571428571429%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/28 64.28571428571429%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/28 64.28571428571429%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/28 67.85714285714286%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/28 67.85714285714286%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/28 67.85714285714286%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/28 67.85714285714286%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/28 71.42857142857143%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/28 71.42857142857143%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/28 71.42857142857143%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/28 75%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/28 75%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/28 75%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/28 78.57142857142857%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/28 78.57142857142857%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/28 78.57142857142857%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/28 82.14285714285714%[0m
+2021/06/25 00:36:27 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/28 82.14285714285714%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/28 82.14285714285714%[0m
+2021/06/25 00:36:27 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/28 82.14285714285714%[0m
+2021/06/25 00:36:28 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/28 85.71428571428571%[0m
+2021/06/25 00:36:28 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/28 85.71428571428571%[0m
+2021/06/25 00:36:28 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/28 85.71428571428571%[0m
+2021/06/25 00:36:28 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/28 85.71428571428571%[0m
+2021/06/25 00:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/28 89.28571428571429%[0m
+2021/06/25 00:36:31 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/28 89.28571428571429%[0m
+2021/06/25 00:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/28 92.85714285714286%[0m
+2021/06/25 00:36:31 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/28 92.85714285714286%[0m
+2021/06/25 00:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/28 96.42857142857143%[0m
+2021/06/25 00:36:31 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/28 96.42857142857143%[0m
+2021/06/25 00:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 00:36:31 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 00:37:52 [92mIDE --> LS     CL: REQUEST textDocument/hover 3: [0m
+2021/06/25 00:37:52 IDE --> textDocument/hover 3 [93m read-locked[0m
+2021/06/25 00:37:52 --> hover(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:1:19)
+2021/06/25 00:37:52     --> hover(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server615991391/sketch/PRUEBA_RS232_UART.ino.cpp:3:19)
+2021/06/25 00:37:52 IDE --> textDocument/hover 3 sent to Clang
+2021/06/25 00:37:52 [91mIDE     LS --> CL: REQUEST textDocument/hover 4: [0m
+2021/06/25 00:37:52 [92mIDE     LS <-- CL: ANSWER textDocument/hover 4 (4): [0m
+2021/06/25 00:37:52 <-- hover("### variable `rs232`  \n\n---\nType: `class SoftwareSerial`  \nrx-tx  \n\n---\n```cpp\nSoftwareSerial rs232(27, 26)\n```")
+2021/06/25 00:37:52 IDE --> textDocument/hover 3 [93m read-unlocked[0m
+2021/06/25 00:37:52 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/25 03:21:02 [92mIDE --> LS     CL: REQUEST shutdown 4: [0m
+2021/06/25 03:21:02 IDE --> shutdown 4 [93m read-locked[0m
+2021/06/25 03:21:02 IDE --> shutdown 4 sent to Clang
+2021/06/25 03:21:02 [91mIDE     LS --> CL: REQUEST shutdown 5: [0m
+2021/06/25 03:21:03 [92mIDE     LS <-- CL: ANSWER shutdown 5 (5): [0m
+2021/06/25 03:21:03 IDE --> shutdown 4 [93m read-unlocked[0m
+2021/06/25 03:21:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/25 03:21:03 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/25 03:21:03 IDE --> exit notif4 [93m read-locked[0m
+2021/06/25 03:21:03 IDE --> exit notif4 sent to Clang
+2021/06/25 03:21:03 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/25 03:21:03 IDE --> exit notif4 [93m read-unlocked[0m
+
+
+
+
+
+
+
+Started logging.
+2021/06/25 21:36:22 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols.log
+2021/06/25 21:36:22 Initial board configuration: {"Arduino Nano" arduino:avr:nano}
+2021/06/25 21:36:22 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server018897127
+2021/06/25 21:36:22 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server018897127\sketch
+2021/06/25 21:36:22 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/25 21:36:22 IDE --> initialize 0 [93m locked[0m
+2021/06/25 21:36:22 IDE --> initialize 0 [93m unlocked[0m
+2021/06/25 21:36:22 INIT--- initializing workbench
+2021/06/25 21:36:22 INIT--- [93m locked[0m
+2021/06/25 21:36:22 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/25 21:36:22 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/25 21:36:22     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART)
+2021/06/25 21:36:22 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn arduino:avr:nano --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\082749210 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server018897127 --format json C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART
+2021/06/25 21:36:30 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server018897127",
+    "used_libraries": [
+      {
+        "name": "SoftwareSerial",
+        "author": "Arduino",
+        "maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+        "sentence": "Enables serial communication on any digital pin.",
+        "paragraph": "The SoftwareSerial library has been developed to allow serial communication on any digital pin of the board, using software to replicate the functionality of the hardware UART. It is possible to have multiple software serial ports with speeds up to 115200 bps.",
+        "website": "http://www.arduino.cc/en/Reference/SoftwareSerial",
+        "category": "Communication",
+        "architectures": [
+          "avr"
+        ],
+        "install_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial",
+        "source_dir": "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\src",
+        "container_platform": "arduino:avr@1.8.3",
+        "real_name": "SoftwareSerial",
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\SoftwareSerialExample",
+          "C:\\Users\\Juchani\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\libraries\\SoftwareSerial\\examples\\TwoPortReceive"
+        ],
+        "provides_includes": [
+          "SoftwareSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/25 21:36:30 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/25 21:36:31 Arduino Data Dir ->  C:\Users\Juchani\AppData\Local\Arduino15
+2021/06/25 21:36:31     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server018897127 -query-driver=C:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/25 21:36:31 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd.log
+2021/06/25 21:36:31 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd-err.log
+2021/06/25 21:36:31 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/25 21:36:31 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/25 21:36:31 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/25 21:36:31 INIT--- initializing workbench (done)
+2021/06/25 21:36:31 INIT--- [93m unlocked[0m
+2021/06/25 21:36:31 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/25 21:36:31 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/25 21:36:31 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/25 21:36:31 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino@1 as 'cpp')
+2021/06/25 21:36:31     increasing .ino tracked files count: 1
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp@1 as 'cpp')
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/25 21:36:31 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/25 21:36:31 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/25 21:36:31 SYLD--- [93m read-locked[0m
+2021/06/25 21:36:31 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/25 21:36:31 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp
+2021/06/25 21:36:31 SYLD--- [93m read-unlocked[0m
+2021/06/25 21:36:31 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/25 21:36:31 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/25 21:36:31 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:7:13)
+2021/06/25 21:36:31     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp:14:13)
+2021/06/25 21:36:31 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/25 21:36:31 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/25 21:36:31 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 21:36:31 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/25 21:36:31 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 21:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 21:36:31 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:36:32 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:36:33 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/25 21:36:33 CLG <-- textDocument/publishDiagnostics notif9 (queued)
+2021/06/25 21:36:33 CLG <-- textDocument/publishDiagnostics notif9 [93m read-locked[0m
+2021/06/25 21:36:33 CLG <-- textDocument/publishDiagnostics notif9 (running)
+2021/06/25 21:36:33 CLG <-- textDocument/publishDiagnostics notif9 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp):
+2021/06/25 21:36:33 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/25 21:36:33 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/25 21:36:33 SYLD--- [93m read-locked[0m
+2021/06/25 21:36:33 SYLD---    symbol: Function setup 5:0-5:12
+2021/06/25 21:36:33 SYLD---             > void setup()
+2021/06/25 21:36:33 SYLD---    symbol: Function loop 7:0-7:11
+2021/06/25 21:36:33 SYLD---             > void loop()
+2021/06/25 21:36:33 SYLD---    symbol: Function setup 9:0-12:1
+2021/06/25 21:36:33 SYLD---      TRIMMED> void setup() 
+2021/06/25 21:36:33 SYLD---    symbol: Function loop 14:0-17:1
+2021/06/25 21:36:33 SYLD---      TRIMMED> void loop() 
+2021/06/25 21:36:33 SYLD--- [93m read-unlocked[0m
+2021/06/25 21:36:33 SYLD--- (done)
+2021/06/25 21:36:33 CLG <-- textDocument/publishDiagnostics notif9 [93m read-unlocked[0m
+2021/06/25 21:36:33     <-- codeAction(0 elements)
+2021/06/25 21:36:33 <-- codeAction(0 elements)
+2021/06/25 21:36:33 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/25 21:36:33 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/25 21:36:33 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/25 21:36:33 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 21:36:33 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:36:36 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:36:36 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:36:36 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:36:36 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:36:37 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:36:37 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/25 21:36:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 21:36:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 21:37:19 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 2: [0m
+2021/06/25 21:37:19 IDE --> textDocument/documentHighlight 2 [93m read-locked[0m
+2021/06/25 21:37:19 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:13)
+2021/06/25 21:37:19     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp:15:13)
+2021/06/25 21:37:19 IDE --> textDocument/documentHighlight 2 sent to Clang
+2021/06/25 21:37:19 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 3: [0m
+2021/06/25 21:37:19 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 3 (3): [0m
+2021/06/25 21:37:19     URI: converted 15:7-15:14 to C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\PRUEBA_RS232_UART.ino:8:7-8:14
+2021/06/25 21:37:19 IDE --> textDocument/documentHighlight 2 [93m read-unlocked[0m
+2021/06/25 21:37:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/25 21:37:19 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/25 21:37:19 IDE --> textDocument/codeAction 3 [93m read-locked[0m
+2021/06/25 21:37:19 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:13)
+2021/06/25 21:37:19     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server018897127/sketch/PRUEBA_RS232_UART.ino.cpp:15:13)
+2021/06/25 21:37:19 IDE --> textDocument/codeAction 3 sent to Clang
+2021/06/25 21:37:19 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 4: [0m
+2021/06/25 21:37:19 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 4 (4): [0m
+2021/06/25 21:37:19     <-- codeAction(0 elements)
+2021/06/25 21:37:19 <-- codeAction(0 elements)
+2021/06/25 21:37:19 IDE --> textDocument/codeAction 3 [93m read-unlocked[0m
+2021/06/25 21:37:19 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/25 21:37:45 [92mIDE --> LS     CL: REQUEST shutdown 4: [0m
+2021/06/25 21:37:45 IDE --> shutdown 4 [93m read-locked[0m
+2021/06/25 21:37:45 IDE --> shutdown 4 sent to Clang
+2021/06/25 21:37:45 [91mIDE     LS --> CL: REQUEST shutdown 5: [0m
+2021/06/25 21:37:45 [92mIDE     LS <-- CL: ANSWER shutdown 5 (5): [0m
+2021/06/25 21:37:45 IDE --> shutdown 4 [93m read-unlocked[0m
+2021/06/25 21:37:45 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/25 21:37:45 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/25 21:37:45 IDE --> exit notif3 [93m read-locked[0m
+2021/06/25 21:37:45 IDE --> exit notif3 sent to Clang
+2021/06/25 21:37:45 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/25 21:37:45 IDE --> exit notif3 [93m read-unlocked[0m
+2021/06/25 21:37:45 Lost connection with clangd!
+2021/06/25 21:37:45 removing buildpath
+
+
+
+
+
+
+
+Started logging.
+2021/06/25 21:37:45 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols.log
+2021/06/25 21:37:45 Initial board configuration: {"Raspberry Pi Pico" rp2040:rp2040:rpipico}
+2021/06/25 21:37:45 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server710579267
+2021/06/25 21:37:45 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server710579267\sketch
+2021/06/25 21:37:45 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/25 21:37:45 IDE --> initialize 0 [93m locked[0m
+2021/06/25 21:37:45 IDE --> initialize 0 [93m unlocked[0m
+2021/06/25 21:37:45 INIT--- initializing workbench
+2021/06/25 21:37:45 INIT--- [93m locked[0m
+2021/06/25 21:37:45     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART)
+2021/06/25 21:37:45 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/25 21:37:45 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn rp2040:rp2040:rpipico --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\104531142 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server710579267 --format json C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART
+2021/06/25 21:37:45 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/25 21:37:56 arduino-cli output: {
+  "compiler_out": "WARNING: library EspSoftwareSerial claims to run on esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on rp2040 architecture(s).\n",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server710579267",
+    "used_libraries": [
+      {
+        "name": "EspSoftwareSerial",
+        "author": "Dirk Kaar, Peter Lerup",
+        "maintainer": "Dirk Kaar \u003cdok@dok-net.net\u003e",
+        "sentence": "Implementation of the Arduino software serial for ESP8266/ESP32.",
+        "website": "https://github.com/plerup/espsoftwareserial/",
+        "category": "Signal Input/Output",
+        "architectures": [
+          "esp8266",
+          "esp32"
+        ],
+        "install_dir": "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial",
+        "source_dir": "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\src",
+        "real_name": "EspSoftwareSerial",
+        "version": "6.12.0",
+        "license": "Unspecified",
+        "location": 1,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\loopback",
+          "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\onewiretest",
+          "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\repeater",
+          "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\servoTester",
+          "C:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\swsertest"
+        ],
+        "provides_includes": [
+          "SoftwareSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/25 21:37:56 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/25 21:37:56 Arduino Data Dir ->  C:\Users\Juchani\AppData\Local\Arduino15
+2021/06/25 21:37:56     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server710579267 -query-driver=C:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/25 21:37:56 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd.log
+2021/06/25 21:37:56 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd-err.log
+2021/06/25 21:37:56 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/25 21:37:56 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/25 21:37:56 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/25 21:37:56 INIT--- initializing workbench (done)
+2021/06/25 21:37:56 INIT--- [93m unlocked[0m
+2021/06/25 21:37:56 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/25 21:37:56 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/25 21:37:56 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/25 21:37:56 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino@1 as 'cpp')
+2021/06/25 21:37:56     increasing .ino tracked files count: 1
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp@1 as 'cpp')
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/25 21:37:56 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/25 21:37:56 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/25 21:37:56 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/25 21:37:56 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/25 21:37:56 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:13)
+2021/06/25 21:37:56 SYLD--- [93m read-locked[0m
+2021/06/25 21:37:56 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp
+2021/06/25 21:37:56 SYLD--- [93m read-unlocked[0m
+2021/06/25 21:37:56 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/25 21:37:56     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp:15:13)
+2021/06/25 21:37:56 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/25 21:37:56 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/25 21:37:56 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 21:37:56 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/25 21:37:56 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/25 21:37:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 21:37:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:37:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 (queued)
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 [93m read-locked[0m
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 (running)
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp):
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 > 2:9 - 1: invalid_width_spec
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 > 15:1 - 1: ovl_no_viable_member_function_in_call
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/25 21:37:59 SYLD--- [93m read-locked[0m
+2021/06/25 21:37:59 SYLD---    symbol: Function setup 5:0-5:12
+2021/06/25 21:37:59 SYLD---             > void setup()
+2021/06/25 21:37:59 SYLD---    symbol: Function loop 7:0-7:11
+2021/06/25 21:37:59 SYLD---             > void loop()
+2021/06/25 21:37:59 SYLD---    symbol: Function setup 9:0-12:1
+2021/06/25 21:37:59 SYLD---      TRIMMED> void setup() 
+2021/06/25 21:37:59 SYLD---    symbol: Function loop 14:0-17:1
+2021/06/25 21:37:59 SYLD---      TRIMMED> void loop() 
+2021/06/25 21:37:59 SYLD--- [93m read-unlocked[0m
+2021/06/25 21:37:59 SYLD--- (done)
+2021/06/25 21:37:59     <-- codeAction(0 elements)
+2021/06/25 21:37:59 <-- codeAction(0 elements)
+2021/06/25 21:37:59 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/25 21:37:59 [92mIDE --> LS     CL: REQUEST textDocument/hover 2: [0m
+2021/06/25 21:37:59 IDE --> textDocument/hover 2 [93m read-locked[0m
+2021/06/25 21:37:59 --> hover(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:0:0)
+2021/06/25 21:37:59     URI: converted 2:9-2:10 to C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\PRUEBA_RS232_UART.ino:0:9-0:10
+2021/06/25 21:37:59     --> hover(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp:2:0)
+2021/06/25 21:37:59 IDE --> textDocument/hover 2 sent to Clang
+2021/06/25 21:37:59 [91mIDE     LS --> CL: REQUEST textDocument/hover 3: [0m
+2021/06/25 21:37:59     URI: converted 15:1-15:14 to C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\PRUEBA_RS232_UART.ino:8:1-8:14
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 to IDE: publishDiagnostics(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino):
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 > 0:9 - 1: invalid_width_spec
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 > 8:1 - 1: ovl_no_viable_member_function_in_call
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/25 21:37:59 CLG <-- textDocument/publishDiagnostics notif11 [93m read-unlocked[0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: ANSWER textDocument/hover 3 (3): [0m
+2021/06/25 21:37:59 IDE --> textDocument/hover 2 [93m read-unlocked[0m
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/25 21:37:59 [92mIDE --> LS     CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 21:37:59 IDE --> $/cancelRequest notif3 [93m read-locked[0m
+2021/06/25 21:37:59 IDE --> $/cancelRequest notif3 sent to Clang
+2021/06/25 21:37:59 [91mIDE     LS --> CL: NOTIFICATION $/cancelRequest: [0m
+2021/06/25 21:37:59 IDE --> $/cancelRequest notif3 [93m read-unlocked[0m
+2021/06/25 21:37:59 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/25 21:37:59 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/25 21:37:59 IDE --> textDocument/codeAction 3 [93m read-locked[0m
+2021/06/25 21:37:59 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:13)
+2021/06/25 21:37:59     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server710579267/sketch/PRUEBA_RS232_UART.ino.cpp:15:13)
+2021/06/25 21:37:59 IDE --> textDocument/codeAction 3 sent to Clang
+2021/06/25 21:37:59 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 4: [0m
+2021/06/25 21:37:59 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 4 (4): [0m
+2021/06/25 21:37:59     <-- codeAction(0 elements)
+2021/06/25 21:37:59 <-- codeAction(0 elements)
+2021/06/25 21:37:59 IDE --> textDocument/codeAction 3 [93m read-unlocked[0m
+2021/06/25 21:37:59 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/25 21:38:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:38:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:38:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:38:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/25 21:38:21 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:38:21 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:38:21 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/25 21:38:22 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:38:22 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:38:22 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/25 21:38:22 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:38:22 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:38:22 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:38:22 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/25 21:38:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:38:23 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:38:23 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:38:23 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/25 21:38:24 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:38:24 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:38:24 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:38:24 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/25 21:38:29 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:38:29 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:38:29 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:38:29 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:38:30 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:38:30 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/25 21:38:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:38:38 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:38:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:38:38 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:38:39 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:38:39 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:38:39 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:38:39 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:38:39 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:38:39 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/25 21:38:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:38:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:38:40 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:38:40 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/25 21:38:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:38:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:38:40 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:38:40 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/25 21:38:44 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:38:44 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:38:44 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:38:44 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/25 21:38:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:38:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:38:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:38:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/25 21:38:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:38:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:38:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:38:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/25 21:39:01 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/25 21:39:01 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/25 21:39:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/25 21:39:04 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/25 21:39:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/25 21:39:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/25 21:39:13 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 21:39:13 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/25 21:53:51 [92mIDE --> LS     CL: REQUEST shutdown 4: [0m
+2021/06/25 21:53:51 IDE --> shutdown 4 [93m read-locked[0m
+2021/06/25 21:53:51 IDE --> shutdown 4 sent to Clang
+2021/06/25 21:53:51 [91mIDE     LS --> CL: REQUEST shutdown 5: [0m
+2021/06/25 21:53:51 [92mIDE     LS <-- CL: ANSWER shutdown 5 (5): [0m
+2021/06/25 21:53:51 IDE --> shutdown 4 [93m read-unlocked[0m
+2021/06/25 21:53:51 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/25 21:53:51 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/25 21:53:51 IDE --> exit notif4 [93m read-locked[0m
+2021/06/25 21:53:51 IDE --> exit notif4 sent to Clang
+2021/06/25 21:53:51 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/25 21:53:51 IDE --> exit notif4 [93m read-unlocked[0m
+2021/06/25 21:53:51 Lost connection with clangd!
+2021/06/25 21:53:51 removing buildpath
+
+
+
+
+
+
+
+Started logging.
+2021/06/30 11:01:37 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols.log
+2021/06/30 11:01:37 Initial board configuration: {"Raspberry Pi Pico" rp2040:rp2040:rpipico}
+2021/06/30 11:01:37 Language server build path: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server419055179
+2021/06/30 11:01:37 Language server build sketch root: C:\Users\Juchani\AppData\Local\Temp\arduino-language-server419055179\sketch
+2021/06/30 11:01:37 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/30 11:01:37 IDE --> initialize 0 [93m locked[0m
+2021/06/30 11:01:37 IDE --> initialize 0 [93m unlocked[0m
+2021/06/30 11:01:37 INIT--- initializing workbench
+2021/06/30 11:01:37 INIT--- [93m locked[0m
+2021/06/30 11:01:37     --> initialize(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART)
+2021/06/30 11:01:37 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/30 11:01:37 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml compile --fqbn rp2040:rp2040:rpipico --only-compilation-database --clean --source-override C:\Users\Juchani\AppData\Local\Temp\211555630 --build-path C:\Users\Juchani\AppData\Local\Temp\arduino-language-server419055179 --format json C:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART
+2021/06/30 11:01:37 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/30 11:02:03 arduino-cli output: {
+  "compiler_out": "WARNING: library EspSoftwareSerial claims to run on esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on rp2040 architecture(s).\n",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\Juchani\\AppData\\Local\\Temp\\arduino-language-server419055179",
+    "used_libraries": [
+      {
+        "name": "EspSoftwareSerial",
+        "author": "Dirk Kaar, Peter Lerup",
+        "maintainer": "Dirk Kaar \u003cdok@dok-net.net\u003e",
+        "sentence": "Implementation of the Arduino software serial for ESP8266/ESP32.",
+        "website": "https://github.com/plerup/espsoftwareserial/",
+        "category": "Signal Input/Output",
+        "architectures": [
+          "esp8266",
+          "esp32"
+        ],
+        "install_dir": "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial",
+        "source_dir": "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\src",
+        "real_name": "EspSoftwareSerial",
+        "version": "6.12.0",
+        "license": "Unspecified",
+        "location": 1,
+        "layout": 1,
+        "examples": [
+          "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\loopback",
+          "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\onewiretest",
+          "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\repeater",
+          "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\servoTester",
+          "c:\\Users\\Juchani\\Documents\\Arduino\\libraries\\EspSoftwareSerial\\examples\\swsertest"
+        ],
+        "provides_includes": [
+          "SoftwareSerial.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/30 11:02:03 running:  c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\Juchani\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/30 11:02:03 Arduino Data Dir ->  c:\Users\Juchani\AppData\Local\Arduino15
+2021/06/30 11:02:03     Starting clangd: c:\Users\Juchani\AppData\Local\Programs\arduino-ide\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Juchani\AppData\Local\Temp\arduino-language-server419055179 -query-driver=c:\Users\Juchani\AppData\Local\Arduino15\packages\**
+2021/06/30 11:02:03 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd.log
+2021/06/30 11:02:03 logging to c:\Users\Juchani\Documents\Arduino\PRUEBA_RS232_UART\inols-clangd-err.log
+2021/06/30 11:02:03 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/30 11:02:04 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/30 11:02:04 INIT--- initializing workbench (done)
+2021/06/30 11:02:04 INIT--- [93m unlocked[0m
+2021/06/30 11:02:04 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/30 11:02:04 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/30 11:02:04 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/30 11:02:04 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 (file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino@1 as 'cpp')
+2021/06/30 11:02:04     increasing .ino tracked files count: 1
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp@1 as 'cpp')
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/30 11:02:04 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/30 11:02:04 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/30 11:02:04 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/30 11:02:04 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/30 11:02:04 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:8:13)
+2021/06/30 11:02:04 SYLD--- [93m read-locked[0m
+2021/06/30 11:02:04 SYLD--- requesting documentSymbol for file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp
+2021/06/30 11:02:04 SYLD--- [93m read-unlocked[0m
+2021/06/30 11:02:04 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/30 11:02:04     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp:15:13)
+2021/06/30 11:02:04 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/30 11:02:04 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/30 11:02:04 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/30 11:02:04 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/26 0%[0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/30 11:02:04 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/26 3.8461538461538463%[0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 (queued)
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 [93m read-locked[0m
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 (running)
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 publishDiagnostics(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp):
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 > 0:9 - 1: pp_file_not_found
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/30 11:02:05 SYLD--- [93m read-locked[0m
+2021/06/30 11:02:05 SYLD---    symbol: Function setup 5:0-5:12
+2021/06/30 11:02:05 SYLD---             > void setup()
+2021/06/30 11:02:05 SYLD---    symbol: Function loop 7:0-7:11
+2021/06/30 11:02:05 SYLD---             > void loop()
+2021/06/30 11:02:05 SYLD---    symbol: Function setup 9:0-12:1
+2021/06/30 11:02:05 SYLD---      TRIMMED> void setup() 
+2021/06/30 11:02:05 SYLD---    symbol: Function loop 14:0-17:1
+2021/06/30 11:02:05 SYLD---      TRIMMED> void loop() 
+2021/06/30 11:02:05 SYLD--- [93m read-unlocked[0m
+2021/06/30 11:02:05 SYLD--- (done)
+2021/06/30 11:02:05     <-- codeAction(0 elements)
+2021/06/30 11:02:05 <-- codeAction(0 elements)
+2021/06/30 11:02:05 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/30 11:02:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/30 11:02:05     URI: converted 0:9-0:10 to /not-ino:0:9-0:10
+2021/06/30 11:02:05 CLG <-- textDocument/publishDiagnostics notif11 [93m read-unlocked[0m
+2021/06/30 11:02:05 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/30 11:02:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/30 11:02:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/26 7.6923076923076925%[0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/30 11:02:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/30 11:02:05 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/30 11:02:05 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/26 11.538461538461538%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/26 15.384615384615385%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/26 19.23076923076923%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/26 23.076923076923077%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/30 11:02:08 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/30 11:02:08 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/26 26.923076923076923%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/26 30.76923076923077%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/26 34.61538461538461%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/26 38.46153846153846%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/26 42.30769230769231%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/26 46.15384615384615%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/30 11:02:09 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/30 11:02:09 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/26 50%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/26 53.84615384615385%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/26 57.69230769230769%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/26 61.53846153846154%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/26 65.38461538461539%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/30 11:02:10 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/30 11:02:10 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/26 69.23076923076923%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/26 73.07692307692308%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/26 76.92307692307692%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/26 80.76923076923077%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/26 84.61538461538461%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/26 88.46153846153847%[0m
+2021/06/30 11:02:11 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/30 11:02:11 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/26 92.3076923076923%[0m
+2021/06/30 11:02:12 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/30 11:02:12 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/26 96.15384615384616%[0m
+2021/06/30 11:02:12 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/30 11:02:12 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/30 11:03:25 [92mIDE --> LS     CL: REQUEST textDocument/documentHighlight 2: [0m
+2021/06/30 11:03:25 IDE --> textDocument/documentHighlight 2 [93m read-locked[0m
+2021/06/30 11:03:25 --> textDocument/documentHighlight(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:1:36)
+2021/06/30 11:03:25     --> textDocument/documentHighlight(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp:3:36)
+2021/06/30 11:03:25 IDE --> textDocument/documentHighlight 2 sent to Clang
+2021/06/30 11:03:25 [91mIDE     LS --> CL: REQUEST textDocument/documentHighlight 3: [0m
+2021/06/30 11:03:25 [92mIDE     LS <-- CL: ANSWER textDocument/documentHighlight 3 (3): [0m
+2021/06/30 11:03:25 IDE --> textDocument/documentHighlight 2 [93m read-unlocked[0m
+2021/06/30 11:03:25 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/30 11:03:26 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 3 [93m read-locked[0m
+2021/06/30 11:03:26 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:1:36)
+2021/06/30 11:03:26     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp:3:36)
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 3 sent to Clang
+2021/06/30 11:03:26 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 4: [0m
+2021/06/30 11:03:26 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 4 (4): [0m
+2021/06/30 11:03:26     <-- codeAction(0 elements)
+2021/06/30 11:03:26 <-- codeAction(0 elements)
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 3 [93m read-unlocked[0m
+2021/06/30 11:03:26 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/30 11:03:26 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 4: [0m
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 4 [93m read-locked[0m
+2021/06/30 11:03:26 --> codeAction(file:///c%3A/Users/Juchani/Documents/Arduino/PRUEBA_RS232_UART/PRUEBA_RS232_UART.ino:0:0)
+2021/06/30 11:03:26     --> codeAction(file:///C:/Users/Juchani/AppData/Local/Temp/arduino-language-server419055179/sketch/PRUEBA_RS232_UART.ino.cpp:2:0)
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 4 sent to Clang
+2021/06/30 11:03:26 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 5: [0m
+2021/06/30 11:03:26 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 5 (5): [0m
+2021/06/30 11:03:26     <-- codeAction(0 elements)
+2021/06/30 11:03:26 <-- codeAction(0 elements)
+2021/06/30 11:03:26 IDE --> textDocument/codeAction 4 [93m read-unlocked[0m
+2021/06/30 11:03:26 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/30 11:54:03 [92mIDE --> LS     CL: REQUEST shutdown 5: [0m
+2021/06/30 11:54:03 IDE --> shutdown 5 [93m read-locked[0m
+2021/06/30 11:54:03 IDE --> shutdown 5 sent to Clang
+2021/06/30 11:54:03 [91mIDE     LS --> CL: REQUEST shutdown 6: [0m
+2021/06/30 11:54:05 [92mIDE     LS <-- CL: ANSWER shutdown 6 (6): [0m
+2021/06/30 11:54:05 IDE --> shutdown 5 [93m read-unlocked[0m
+2021/06/30 11:54:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (5): [0m

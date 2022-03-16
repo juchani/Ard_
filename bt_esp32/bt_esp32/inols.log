@@ -1,0 +1,1261 @@
+
+
+
+
+
+
+
+Started logging.
+
+<<<
+Content-Length: 3084
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":2464,"clientInfo":{"name":"vscode","version":"1.50.0"},"rootPath":"c:\\Users\\Juchani\\Documents\\Arduino\\bt esp32\\bt_esp32","rootUri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"configuration":true,"workspaceFolders":true},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]}},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"initializationOptions":{},"trace":"off","workspaceFolders":[{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32","name":"bt_esp32"}]}}
+>>>
+Content-Length: 598
+
+{"id":0,"result":{"capabilities":{"textDocumentSync":2,"hoverProvider":true,"completionProvider":{"triggerCharacters":[".","\u003e",":"]},"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"workspaceSymbolProvider":true,"codeActionProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":false,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]}}},"jsonrpc":"2.0"}
+<<<
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 1496
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino","languageId":"cpp","version":1,"text":"#include \"BluetoothSerial.h\"\n\nBluetoothSerial SerialBT;\n\nString MACadd = \"20:16:11:29:70:26\";\nuint8_t address[6]  = {0x20, 0x16, 0x11, 0x29, 0x70, 0x26};\n//uint8_t address[6]  = {0x11, 0x1D, 0xA5, 0x02, 0xC3, 0x22};\nString name = \"HC-05\";\nchar *pin = \"1234\"; //<- standard pin would be provided by default\nbool connected;\n\nvoid setup() {\n  Serial.begin(115200);\n  \n  SerialBT.begin(\"ESP32test\", true); \n  SerialBT.setPin(pin);\n  Serial.println(\"The device started in master mode, make sure remote BT device is on!\"); \n  \n  connected = SerialBT.connect(name);\n  \n  if(connected) {\n    Serial.println(\"Connected Succesfully!\");\n  } else {\n    while(!SerialBT.connected(10000)) {\n      Serial.println(\"Failed to connect. Make sure remote device is available and in range, then restart app.\"); \n    }\n  }\n  // disconnect() may take upto 10 secs max\n  if (SerialBT.disconnect()) {\n    Serial.println(\"Disconnected Succesfully!\");\n  }\n  // this would reconnect to the name(will use address, if resolved) or address used with connect(name/address).\n  SerialBT.connect();\n}\n\nvoid loop() {\n  if (Serial.available()) {\n    SerialBT.write(Serial.read());\n  }\n  if (SerialBT.available()) {\n    Serial.write(SerialBT.read());\n  }\n  delay(20);\n}"}}}Content-Length: 276
+
+{"jsonrpc":"2.0","id":1,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":0,"character":0},"end":{"line":0,"character":0}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 111
+
+{"method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"},"id":0,"jsonrpc":"2.0"}Content-Length: 36
+
+{"id":1,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+>>>
+Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"title":"indexing","percentage":0,"kind":"begin"}},"jsonrpc":"2.0"}Content-Length: 107
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}},"jsonrpc":"2.0"}Content-Length: 5088
+
+{"method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino","diagnostics":[{"range":{"start":{"line":2,"character":0},"end":{"line":2,"character":15}},"severity":1,"code":"unknown_typename","source":"clang","message":"Unknown type name 'BluetoothSerial'"},{"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":6}},"severity":1,"code":"unknown_typename","source":"clang","message":"Unknown type name 'String'"},{"range":{"start":{"line":5,"character":0},"end":{"line":5,"character":7}},"severity":1,"code":"unknown_typename","source":"clang","message":"Unknown type name 'uint8_t'"},{"range":{"start":{"line":7,"character":0},"end":{"line":7,"character":6}},"severity":1,"code":"unknown_typename","source":"clang","message":"Unknown type name 'String'"},{"range":{"start":{"line":8,"character":12},"end":{"line":8,"character":18}},"severity":2,"code":"-Wwritable-strings","source":"clang","message":"ISO C++11 does not allow conversion from string literal to 'char *'"},{"range":{"start":{"line":12,"character":2},"end":{"line":12,"character":8}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:15:3: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":16,"character":2},"end":{"line":16,"character":8}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:19:3: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":21,"character":4},"end":{"line":21,"character":10}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:24:5: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":24,"character":6},"end":{"line":24,"character":12}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:27:7: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":29,"character":4},"end":{"line":29,"character":10}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:32:5: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":36,"character":6},"end":{"line":36,"character":12}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:39:7: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":37,"character":19},"end":{"line":37,"character":25}},"severity":1,"code":"undeclared_var_use","source":"clang","message":"Use of undeclared identifier 'Serial'"},{"range":{"start":{"line":40,"character":4},"end":{"line":40,"character":10}},"severity":1,"code":"undeclared_var_use_suggest","source":"clang","message":"Use of undeclared identifier 'Serial'; did you mean 'SerialBT'? (fix available)\n\nbt_esp32.ino.cpp:5:17: note: 'SerialBT' declared here"},{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"severity":3,"message":"'SerialBT' declared here\n\nbt_esp32.ino.cpp:43:5: error: use of undeclared identifier 'Serial'; did you mean 'SerialBT'?"},{"range":{"start":{"line":42,"character":2},"end":{"line":42,"character":7}},"severity":1,"code":"undeclared_var_use","source":"clang","message":"Use of undeclared identifier 'delay'"}]},"jsonrpc":"2.0"}
+<<<
+Content-Length: 276
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":0,"character":0},"end":{"line":0,"character":0}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"id":2,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 58
+
+{"jsonrpc":"2.0","id":3,"method":"shutdown","params":null}
+>>>
+Content-Length: 38
+
+{"id":3,"result":null,"jsonrpc":"2.0"}
+<<<
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}
+
+
+
+
+
+
+Started logging.
+
+<<<
+Content-Length: 3084
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":2464,"clientInfo":{"name":"vscode","version":"1.50.0"},"rootPath":"c:\\Users\\Juchani\\Documents\\Arduino\\bt esp32\\bt_esp32","rootUri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"configuration":true,"workspaceFolders":true},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]}},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"initializationOptions":{},"trace":"off","workspaceFolders":[{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32","name":"bt_esp32"}]}}
+>>>
+Content-Length: 598
+
+{"id":0,"result":{"capabilities":{"textDocumentSync":2,"hoverProvider":true,"completionProvider":{"triggerCharacters":[".","\u003e",":"]},"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"workspaceSymbolProvider":true,"codeActionProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":false,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]}}},"jsonrpc":"2.0"}
+<<<
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 1496
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino","languageId":"cpp","version":1,"text":"#include \"BluetoothSerial.h\"\n\nBluetoothSerial SerialBT;\n\nString MACadd = \"20:16:11:29:70:26\";\nuint8_t address[6]  = {0x20, 0x16, 0x11, 0x29, 0x70, 0x26};\n//uint8_t address[6]  = {0x11, 0x1D, 0xA5, 0x02, 0xC3, 0x22};\nString name = \"HC-05\";\nchar *pin = \"1234\"; //<- standard pin would be provided by default\nbool connected;\n\nvoid setup() {\n  Serial.begin(115200);\n  \n  SerialBT.begin(\"ESP32test\", true); \n  SerialBT.setPin(pin);\n  Serial.println(\"The device started in master mode, make sure remote BT device is on!\"); \n  \n  connected = SerialBT.connect(name);\n  \n  if(connected) {\n    Serial.println(\"Connected Succesfully!\");\n  } else {\n    while(!SerialBT.connected(10000)) {\n      Serial.println(\"Failed to connect. Make sure remote device is available and in range, then restart app.\"); \n    }\n  }\n  // disconnect() may take upto 10 secs max\n  if (SerialBT.disconnect()) {\n    Serial.println(\"Disconnected Succesfully!\");\n  }\n  // this would reconnect to the name(will use address, if resolved) or address used with connect(name/address).\n  SerialBT.connect();\n}\n\nvoid loop() {\n  if (Serial.available()) {\n    SerialBT.write(Serial.read());\n  }\n  if (SerialBT.available()) {\n    Serial.write(SerialBT.read());\n  }\n  delay(20);\n}"}}}Content-Length: 276
+
+{"jsonrpc":"2.0","id":1,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":0,"character":0},"end":{"line":0,"character":0}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 111
+
+{"method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"},"id":0,"jsonrpc":"2.0"}Content-Length: 36
+
+{"id":1,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+>>>
+Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"title":"indexing","percentage":0,"kind":"begin"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"1/40","percentage":2.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 142
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"2/40","percentage":5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 142
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"2/40","percentage":5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"3/40","percentage":7.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"4/40","percentage":10,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 145
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"5/40","percentage":12.5,"kind":"report"}},"jsonrpc":"2.0"}
+<<<
+Content-Length: 280
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":12,"character":23},"end":{"line":12,"character":23}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"id":2,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":3,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":14,"character":23}}}Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":3}}Content-Length: 218
+
+{"jsonrpc":"2.0","id":4,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":16,"character":23}}}
+>>>
+Content-Length: 36
+
+{"id":3,"result":[],"jsonrpc":"2.0"}Content-Length: 36
+
+{"id":4,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":4}}Content-Length: 218
+
+{"jsonrpc":"2.0","id":5,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":18,"character":23}}}Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":5}}
+>>>
+Content-Length: 124
+
+{"id":5,"result":[{"range":{"start":{"line":18,"character":23},"end":{"line":18,"character":30}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 280
+
+{"jsonrpc":"2.0","id":6,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":20,"character":17},"end":{"line":20,"character":17}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"id":6,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":7,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":21,"character":23}}}
+>>>
+Content-Length: 36
+
+{"id":7,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 280
+
+{"jsonrpc":"2.0","id":8,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":21,"character":23},"end":{"line":21,"character":23}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"id":8,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":9,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":23,"character":23}}}Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":9}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":10,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":24,"character":23}}}
+>>>
+Content-Length: 124
+
+{"id":9,"result":[{"range":{"start":{"line":23,"character":20},"end":{"line":23,"character":29}},"kind":1}],"jsonrpc":"2.0"}Content-Length: 37
+
+{"id":10,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":11,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":27,"character":23}}}
+>>>
+Content-Length: 37
+
+{"id":11,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":12,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":27,"character":23},"end":{"line":27,"character":23}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":12,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":13,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":28,"character":23}}}
+>>>
+Content-Length: 125
+
+{"id":13,"result":[{"range":{"start":{"line":28,"character":15},"end":{"line":28,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":14,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":28,"character":23},"end":{"line":28,"character":23}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":14,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":15,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":29,"character":23}}}
+>>>
+Content-Length: 37
+
+{"id":15,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":16,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":23}}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":16}}
+>>>
+Content-Length: 37
+
+{"id":16,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":17,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":35,"character":13},"end":{"line":35,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":17,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":18,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":37,"character":23}}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":18}}
+>>>
+Content-Length: 739
+
+{"id":18,"result":[{"range":{"start":{"line":12,"character":2},"end":{"line":12,"character":8}},"kind":1},{"range":{"start":{"line":16,"character":2},"end":{"line":16,"character":8}},"kind":1},{"range":{"start":{"line":21,"character":4},"end":{"line":21,"character":10}},"kind":1},{"range":{"start":{"line":24,"character":6},"end":{"line":24,"character":12}},"kind":1},{"range":{"start":{"line":29,"character":4},"end":{"line":29,"character":10}},"kind":1},{"range":{"start":{"line":36,"character":6},"end":{"line":36,"character":12}},"kind":1},{"range":{"start":{"line":37,"character":19},"end":{"line":37,"character":25}},"kind":1},{"range":{"start":{"line":40,"character":4},"end":{"line":40,"character":10}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":19,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":39,"character":23}}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":19}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":20,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":40,"character":23}}}
+>>>
+Content-Length: 125
+
+{"id":19,"result":[{"range":{"start":{"line":39,"character":15},"end":{"line":39,"character":24}},"kind":1}],"jsonrpc":"2.0"}Content-Length: 918
+
+{"id":20,"result":[{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"kind":1},{"range":{"start":{"line":14,"character":2},"end":{"line":14,"character":10}},"kind":1},{"range":{"start":{"line":15,"character":2},"end":{"line":15,"character":10}},"kind":1},{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":22}},"kind":1},{"range":{"start":{"line":23,"character":11},"end":{"line":23,"character":19}},"kind":1},{"range":{"start":{"line":28,"character":6},"end":{"line":28,"character":14}},"kind":1},{"range":{"start":{"line":32,"character":2},"end":{"line":32,"character":10}},"kind":1},{"range":{"start":{"line":37,"character":4},"end":{"line":37,"character":12}},"kind":1},{"range":{"start":{"line":39,"character":6},"end":{"line":39,"character":14}},"kind":1},{"range":{"start":{"line":40,"character":17},"end":{"line":40,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":20}}Content-Length: 279
+
+{"jsonrpc":"2.0","id":21,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":43,"character":1},"end":{"line":43,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":21,"result":[],"jsonrpc":"2.0"}Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"6/40","percentage":15,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 145
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"7/40","percentage":17.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 145
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"7/40","percentage":17.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"8/40","percentage":20,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 143
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"8/40","percentage":20,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 145
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"9/40","percentage":22.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 145
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"9/40","percentage":22.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"10/40","percentage":25,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"10/40","percentage":25,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"11/40","percentage":27.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"11/40","percentage":27.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"12/40","percentage":30,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"12/40","percentage":30,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"13/40","percentage":32.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"13/40","percentage":32.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"14/40","percentage":35,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"14/40","percentage":35,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"15/40","percentage":37.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"15/40","percentage":37.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"16/40","percentage":40,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"17/40","percentage":42.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"17/40","percentage":42.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"18/40","percentage":45,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"18/40","percentage":45,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"19/40","percentage":47.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"19/40","percentage":47.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"20/40","percentage":50,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"20/40","percentage":50,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"21/40","percentage":52.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"21/40","percentage":52.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"22/40","percentage":55,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"22/40","percentage":55,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"23/40","percentage":57.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"23/40","percentage":57.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"24/40","percentage":60,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"24/40","percentage":60,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"25/40","percentage":62.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"25/40","percentage":62.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"26/40","percentage":65,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"26/40","percentage":65,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"27/40","percentage":67.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"27/40","percentage":67.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"28/40","percentage":70,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"28/40","percentage":70,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"29/40","percentage":72.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"29/40","percentage":72.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"30/40","percentage":75,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"30/40","percentage":75,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"31/40","percentage":77.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"31/40","percentage":77.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"32/40","percentage":80,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"32/40","percentage":80,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"33/40","percentage":82.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"33/40","percentage":82.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"34/40","percentage":85,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"34/40","percentage":85,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"35/40","percentage":87.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"36/40","percentage":90,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"36/40","percentage":90,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"37/40","percentage":92.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 144
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"38/40","percentage":95,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 146
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"message":"39/40","percentage":97.5,"kind":"report"}},"jsonrpc":"2.0"}Content-Length: 107
+
+{"method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}},"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":22,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":39,"character":20}}}
+>>>
+Content-Length: 125
+
+{"id":22,"result":[{"range":{"start":{"line":39,"character":15},"end":{"line":39,"character":24}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":23,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":39,"character":20},"end":{"line":39,"character":20}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":23,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 207
+
+{"jsonrpc":"2.0","id":24,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":86}}}
+>>>
+Content-Length: 39
+
+{"id":24,"result":null,"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":25,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":87}}}
+>>>
+Content-Length: 37
+
+{"id":25,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":26,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":31,"character":87},"end":{"line":31,"character":87}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":26,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":27,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":30,"character":3},"end":{"line":30,"character":3}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":27,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":28,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":27,"character":43}}}
+>>>
+Content-Length: 37
+
+{"id":28,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":29,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":24,"character":87}}}
+>>>
+Content-Length: 37
+
+{"id":29,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":30,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":24,"character":87},"end":{"line":24,"character":87}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":30,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":31,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":23,"character":39},"end":{"line":23,"character":39}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":31,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":32,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":18,"character":37},"end":{"line":18,"character":37}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":32,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":33,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":16,"character":87},"end":{"line":16,"character":87}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":33,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":34,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":11,"character":14},"end":{"line":11,"character":14}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":34,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":35,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":24,"character":87}}}
+>>>
+Content-Length: 37
+
+{"id":35,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":36,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":27,"character":43}}}
+>>>
+Content-Length: 37
+
+{"id":36,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":37,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":27,"character":43},"end":{"line":27,"character":43}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":37,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":38,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":28,"character":30},"end":{"line":28,"character":30}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":38,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":39,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":87}}}
+>>>
+Content-Length: 37
+
+{"id":39,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":40,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":43,"character":1},"end":{"line":43,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":40,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":41,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":42,"character":12},"end":{"line":42,"character":12}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":41,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":42,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":38,"character":3},"end":{"line":38,"character":3}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":42,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":43,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":39,"character":29},"end":{"line":39,"character":29}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":43,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":44,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":43,"character":1},"end":{"line":43,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":44,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":45,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":35,"character":13},"end":{"line":35,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":45,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":46,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":32,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":46,"result":[{"range":{"start":{"line":32,"character":11},"end":{"line":32,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":46}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":47,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":47,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":48,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":29,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":48,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":49,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":28,"character":13}}}
+>>>
+Content-Length: 918
+
+{"id":49,"result":[{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"kind":1},{"range":{"start":{"line":14,"character":2},"end":{"line":14,"character":10}},"kind":1},{"range":{"start":{"line":15,"character":2},"end":{"line":15,"character":10}},"kind":1},{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":22}},"kind":1},{"range":{"start":{"line":23,"character":11},"end":{"line":23,"character":19}},"kind":1},{"range":{"start":{"line":28,"character":6},"end":{"line":28,"character":14}},"kind":1},{"range":{"start":{"line":32,"character":2},"end":{"line":32,"character":10}},"kind":1},{"range":{"start":{"line":37,"character":4},"end":{"line":37,"character":12}},"kind":1},{"range":{"start":{"line":39,"character":6},"end":{"line":39,"character":14}},"kind":1},{"range":{"start":{"line":40,"character":17},"end":{"line":40,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":49}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":50,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":27,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":50,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":50}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":51,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":24,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":51,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":52,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":23,"character":13}}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":52}}
+>>>
+Content-Length: 918
+
+{"id":52,"result":[{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"kind":1},{"range":{"start":{"line":14,"character":2},"end":{"line":14,"character":10}},"kind":1},{"range":{"start":{"line":15,"character":2},"end":{"line":15,"character":10}},"kind":1},{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":22}},"kind":1},{"range":{"start":{"line":23,"character":11},"end":{"line":23,"character":19}},"kind":1},{"range":{"start":{"line":28,"character":6},"end":{"line":28,"character":14}},"kind":1},{"range":{"start":{"line":32,"character":2},"end":{"line":32,"character":10}},"kind":1},{"range":{"start":{"line":37,"character":4},"end":{"line":37,"character":12}},"kind":1},{"range":{"start":{"line":39,"character":6},"end":{"line":39,"character":14}},"kind":1},{"range":{"start":{"line":40,"character":17},"end":{"line":40,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":53,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":21,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":53,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":54,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":21,"character":13},"end":{"line":21,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":54,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":55,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":20,"character":13}}}
+>>>
+Content-Length: 298
+
+{"id":55,"result":[{"range":{"start":{"line":9,"character":5},"end":{"line":9,"character":14}},"kind":1},{"range":{"start":{"line":18,"character":2},"end":{"line":18,"character":11}},"kind":3},{"range":{"start":{"line":20,"character":5},"end":{"line":20,"character":14}},"kind":2}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":56,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":20,"character":13},"end":{"line":20,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":56,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":57,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":16,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":57,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":57}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":58,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":15,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":58,"result":[{"range":{"start":{"line":15,"character":11},"end":{"line":15,"character":17}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":58}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":59,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":14,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":59,"result":[{"range":{"start":{"line":14,"character":11},"end":{"line":14,"character":16}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":60,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":14,"character":13},"end":{"line":14,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":60,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":61,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":12,"character":13}}}
+>>>
+Content-Length: 124
+
+{"id":61,"result":[{"range":{"start":{"line":12,"character":9},"end":{"line":12,"character":14}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":61}}Content-Length: 218
+
+{"jsonrpc":"2.0","id":62,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":9,"character":13}}}
+>>>
+Content-Length: 298
+
+{"id":62,"result":[{"range":{"start":{"line":9,"character":5},"end":{"line":9,"character":14}},"kind":1},{"range":{"start":{"line":18,"character":2},"end":{"line":18,"character":11}},"kind":3},{"range":{"start":{"line":20,"character":5},"end":{"line":20,"character":14}},"kind":2}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":63,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":9,"character":13},"end":{"line":9,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":63,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":64,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":8,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":64,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":65,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":8,"character":13},"end":{"line":8,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":65,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":66,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":7,"character":13},"end":{"line":7,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":66,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":67,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":8,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":67,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":68,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":8,"character":13},"end":{"line":8,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":68,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":69,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":9,"character":13}}}
+>>>
+Content-Length: 298
+
+{"id":69,"result":[{"range":{"start":{"line":9,"character":5},"end":{"line":9,"character":14}},"kind":1},{"range":{"start":{"line":18,"character":2},"end":{"line":18,"character":11}},"kind":3},{"range":{"start":{"line":20,"character":5},"end":{"line":20,"character":14}},"kind":2}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":69}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":70,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":12,"character":13}}}
+>>>
+Content-Length: 124
+
+{"id":70,"result":[{"range":{"start":{"line":12,"character":9},"end":{"line":12,"character":14}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":71,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":14,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":71,"result":[{"range":{"start":{"line":14,"character":11},"end":{"line":14,"character":16}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":72,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":15,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":72,"result":[{"range":{"start":{"line":15,"character":11},"end":{"line":15,"character":17}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":73,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":16,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":73,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":74,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":16,"character":13},"end":{"line":16,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":74,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 281
+
+{"jsonrpc":"2.0","id":75,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":18,"character":13},"end":{"line":18,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":75,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":76,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":16,"character":13}}}
+>>>
+Content-Length: 391
+
+{"id":76,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":76}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":77,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":15,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":77,"result":[{"range":{"start":{"line":15,"character":11},"end":{"line":15,"character":17}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":77}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":78,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":14,"character":13}}}
+>>>
+Content-Length: 125
+
+{"id":78,"result":[{"range":{"start":{"line":14,"character":11},"end":{"line":14,"character":16}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":79,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":12,"character":13}}}
+>>>
+Content-Length: 124
+
+{"id":79,"result":[{"range":{"start":{"line":12,"character":9},"end":{"line":12,"character":14}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":80,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":9,"character":13}}}
+>>>
+Content-Length: 298
+
+{"id":80,"result":[{"range":{"start":{"line":9,"character":5},"end":{"line":9,"character":14}},"kind":1},{"range":{"start":{"line":18,"character":2},"end":{"line":18,"character":11}},"kind":3},{"range":{"start":{"line":20,"character":5},"end":{"line":20,"character":14}},"kind":2}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":81,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":8,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":81,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":82,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":6,"character":13}}}
+>>>
+Content-Length: 37
+
+{"id":82,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":83,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":5,"character":13}}}
+>>>
+Content-Length: 122
+
+{"id":83,"result":[{"range":{"start":{"line":5,"character":8},"end":{"line":5,"character":15}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":84,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":84,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":85,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":4,"character":13}}}
+>>>
+Content-Length: 122
+
+{"id":85,"result":[{"range":{"start":{"line":4,"character":7},"end":{"line":4,"character":13}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":86,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":4,"character":13},"end":{"line":4,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":86,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":87,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":5,"character":13}}}
+>>>
+Content-Length: 122
+
+{"id":87,"result":[{"range":{"start":{"line":5,"character":8},"end":{"line":5,"character":15}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":88,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":13}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":88,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":89,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":14},"end":{"line":5,"character":14}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":89,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":90,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":5,"character":16}}}
+>>>
+Content-Length: 37
+
+{"id":90,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":91,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":17},"end":{"line":5,"character":17}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":91,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":92,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":18},"end":{"line":5,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":92,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":93,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":5,"character":17}}}
+>>>
+Content-Length: 37
+
+{"id":93,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 218
+
+{"jsonrpc":"2.0","id":94,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":5,"character":15}}}
+>>>
+Content-Length: 122
+
+{"id":94,"result":[{"range":{"start":{"line":5,"character":8},"end":{"line":5,"character":15}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":95,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":15},"end":{"line":5,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":95,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":96,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":14},"end":{"line":5,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":96,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 279
+
+{"jsonrpc":"2.0","id":97,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":10},"end":{"line":5,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":97,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 278
+
+{"jsonrpc":"2.0","id":98,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":9},"end":{"line":5,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":98,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 278
+
+{"jsonrpc":"2.0","id":99,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":5,"character":8},"end":{"line":5,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"id":99,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":100,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":6,"character":15}}}
+>>>
+Content-Length: 38
+
+{"id":100,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 280
+
+{"jsonrpc":"2.0","id":101,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":6,"character":15},"end":{"line":6,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 38
+
+{"id":101,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 219
+
+{"jsonrpc":"2.0","id":102,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":7,"character":15}}}
+>>>
+Content-Length: 38
+
+{"id":102,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 64
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":102}}Content-Length: 219
+
+{"jsonrpc":"2.0","id":103,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":8,"character":15}}}
+>>>
+Content-Length: 38
+
+{"id":103,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":104,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":12,"character":15}}}
+>>>
+Content-Length: 125
+
+{"id":104,"result":[{"range":{"start":{"line":12,"character":9},"end":{"line":12,"character":14}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":105,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":14,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":105,"result":[{"range":{"start":{"line":14,"character":11},"end":{"line":14,"character":16}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":106,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":15,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":106,"result":[{"range":{"start":{"line":15,"character":11},"end":{"line":15,"character":17}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":107,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":16,"character":15}}}
+>>>
+Content-Length: 392
+
+{"id":107,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":108,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":18,"character":15}}}
+>>>
+Content-Length: 919
+
+{"id":108,"result":[{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"kind":1},{"range":{"start":{"line":14,"character":2},"end":{"line":14,"character":10}},"kind":1},{"range":{"start":{"line":15,"character":2},"end":{"line":15,"character":10}},"kind":1},{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":22}},"kind":1},{"range":{"start":{"line":23,"character":11},"end":{"line":23,"character":19}},"kind":1},{"range":{"start":{"line":28,"character":6},"end":{"line":28,"character":14}},"kind":1},{"range":{"start":{"line":32,"character":2},"end":{"line":32,"character":10}},"kind":1},{"range":{"start":{"line":37,"character":4},"end":{"line":37,"character":12}},"kind":1},{"range":{"start":{"line":39,"character":6},"end":{"line":39,"character":14}},"kind":1},{"range":{"start":{"line":40,"character":17},"end":{"line":40,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 64
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":108}}Content-Length: 220
+
+{"jsonrpc":"2.0","id":109,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":21,"character":15}}}
+>>>
+Content-Length: 392
+
+{"id":109,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":110,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":23,"character":15}}}
+>>>
+Content-Length: 919
+
+{"id":110,"result":[{"range":{"start":{"line":2,"character":16},"end":{"line":2,"character":24}},"kind":1},{"range":{"start":{"line":14,"character":2},"end":{"line":14,"character":10}},"kind":1},{"range":{"start":{"line":15,"character":2},"end":{"line":15,"character":10}},"kind":1},{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":22}},"kind":1},{"range":{"start":{"line":23,"character":11},"end":{"line":23,"character":19}},"kind":1},{"range":{"start":{"line":28,"character":6},"end":{"line":28,"character":14}},"kind":1},{"range":{"start":{"line":32,"character":2},"end":{"line":32,"character":10}},"kind":1},{"range":{"start":{"line":37,"character":4},"end":{"line":37,"character":12}},"kind":1},{"range":{"start":{"line":39,"character":6},"end":{"line":39,"character":14}},"kind":1},{"range":{"start":{"line":40,"character":17},"end":{"line":40,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 64
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":110}}Content-Length: 220
+
+{"jsonrpc":"2.0","id":111,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":24,"character":15}}}
+>>>
+Content-Length: 392
+
+{"id":111,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 64
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":111}}Content-Length: 220
+
+{"jsonrpc":"2.0","id":112,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":27,"character":15}}}
+>>>
+Content-Length: 38
+
+{"id":112,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":113,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":28,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":113,"result":[{"range":{"start":{"line":28,"character":15},"end":{"line":28,"character":25}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":114,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":29,"character":15}}}
+>>>
+Content-Length: 392
+
+{"id":114,"result":[{"range":{"start":{"line":16,"character":9},"end":{"line":16,"character":16}},"kind":1},{"range":{"start":{"line":21,"character":11},"end":{"line":21,"character":18}},"kind":1},{"range":{"start":{"line":24,"character":13},"end":{"line":24,"character":20}},"kind":1},{"range":{"start":{"line":29,"character":11},"end":{"line":29,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":115,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":31,"character":15}}}
+>>>
+Content-Length: 38
+
+{"id":115,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":116,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":32,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":116,"result":[{"range":{"start":{"line":32,"character":11},"end":{"line":32,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":117,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":36,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":117,"result":[{"range":{"start":{"line":36,"character":13},"end":{"line":36,"character":22}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":118,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":37,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":118,"result":[{"range":{"start":{"line":37,"character":13},"end":{"line":37,"character":18}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 280
+
+{"jsonrpc":"2.0","id":119,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":38,"character":3},"end":{"line":38,"character":3}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 38
+
+{"id":119,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":120,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":39,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":120,"result":[{"range":{"start":{"line":39,"character":15},"end":{"line":39,"character":24}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 282
+
+{"jsonrpc":"2.0","id":121,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":39,"character":15},"end":{"line":39,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 38
+
+{"id":121,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 220
+
+{"jsonrpc":"2.0","id":122,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"position":{"line":40,"character":15}}}
+>>>
+Content-Length: 126
+
+{"id":122,"result":[{"range":{"start":{"line":40,"character":11},"end":{"line":40,"character":16}},"kind":1}],"jsonrpc":"2.0"}
+<<<
+Content-Length: 64
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":122}}Content-Length: 280
+
+{"jsonrpc":"2.0","id":123,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/Juchani/Documents/Arduino/bt%20esp32/bt_esp32/bt_esp32.ino"},"range":{"start":{"line":43,"character":1},"end":{"line":43,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 38
+
+{"id":123,"result":[],"jsonrpc":"2.0"}
+<<<
+Content-Length: 60
+
+{"jsonrpc":"2.0","id":124,"method":"shutdown","params":null}
+>>>
+Content-Length: 40
+
+{"id":124,"result":null,"jsonrpc":"2.0"}
+<<<
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}
