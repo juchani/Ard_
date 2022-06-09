@@ -1,7 +1,6 @@
 #include "RTClib.h"
-#include <Adafruit_GFX.h>    // Core graphics library
-#include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
-#include <SPI.h>
+
+
 #include <EEPROM.h>
 //#include <NTPClient.h>
 #include <WiFi.h> // for WiFi shield

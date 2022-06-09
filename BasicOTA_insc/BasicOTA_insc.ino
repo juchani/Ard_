@@ -3,8 +3,8 @@
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 #define led 2
-const char* ssid = "Insertec-AP";
-const char* password = "Omicron22.";
+const char* ssid = "Familia Juchani";
+const char* password = "8884992sc";
 
 void setup() {
   pinMode(led,OUTPUT);

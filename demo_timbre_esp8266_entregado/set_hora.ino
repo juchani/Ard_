@@ -4,6 +4,7 @@ void set_hora(int addr) {
   barrido();
   b = 0;
   c = hora_;
+ 
   while (1 == 1) {
     rtc_act();
     bot(23, 1);
@@ -60,7 +61,6 @@ void set_minutos() {
     if (!digitalRead(enter)) {
       reg_minuto = c;
       set_duracion();
-
     }
     b++;
     delay(1);
@@ -147,7 +147,7 @@ void validacion() {
   while (1 == 1) {
     rtc_act();
     bot(2, 1);
-    String resp[] = {"SI", "NO","PROBAR"};
+    String resp[] = {"NO", "SI","PROBAR"};
     tft.setTextWrap(true);                        // turn off text wrap option
     tft.setTextColor(ST77XX_WHITE, ST77XX_BLACK);  // set text color to white and black background
     tft.setTextSize(2);                 // text size = 2
@@ -167,14 +167,14 @@ void validacion() {
     tft.print("R: ");
     tft.println(str_num(reg_rep));
     
-    if (c == 0) {
+    if (c == 1) {
       tft.print("    ");
       tft.setTextColor(ST77XX_WHITE, ST77XX_GREEN);
       tft.print(resp[c]);
       tft.setTextColor(ST77XX_WHITE, ST77XX_BLACK);
       tft.print("    ");
     }
-    else if(c==1) {
+    else if(c==0) {
       tft.print("    ");
       tft.setTextColor(ST77XX_WHITE, ST77XX_RED);
       tft.print(resp[c]);
@@ -182,14 +182,13 @@ void validacion() {
       tft.print("    ");
     }
     else if(c==2) {
-      
       tft.print("  ");
       tft.setTextColor(ST77XX_WHITE, gris);
       tft.print(resp[c]);
     }
 
     
-    if (!digitalRead(enter) && c == 0) {
+    if (!digitalRead(enter) && c == 1) {
       EEPROM.write(add_hora[reg_addr], reg_hora);
       EEPROM.write(add_minuto[reg_addr], reg_minuto);
       EEPROM.write(add_duracion[reg_addr], reg_duracion);
@@ -203,7 +202,7 @@ void validacion() {
       delay(1000);
       ESP.restart();
     }
-    if (!digitalRead(enter) && c == 1) {
+    if (!digitalRead(enter) && c == 0) {
       barrido();
       tft.setTextSize(2);                 // text size = 2
       tft.setCursor(10, 90);
@@ -219,6 +218,5 @@ void validacion() {
     b++;
     delay(1);
     barrido(1);
-
   }
 }

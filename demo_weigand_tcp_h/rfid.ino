@@ -4,7 +4,7 @@ void pinStateChanged() {
 }
 
 void stateChanged(bool plugged, const char* message) {
-
+  en_wg = plugged;
 }
 
 void receivedData(uint8_t* data, uint8_t bits, const char* message) {
@@ -15,24 +15,16 @@ void receivedData(uint8_t* data, uint8_t bits, const char* message) {
     demo = demo + String(data[i] >> 4, 16);
     demo = demo + String(data[i] & 0xF, 16);
   }
-  c = String(demo[0]) + String(demo[1]);
-  d = String(demo[2]) + String(demo[3]);
-  e = String(demo[4]) + String(demo[5]);
-  unsigned int m = hexToDec(demo);
+  a = String(hexToDec(demo));
+
   demo = hexToDec(demo);
-  data_=hexToDec(demo);
   Serial.println(demo);
-  for (int i = 0; i < demo.length(); i++) {
-    if (i <= ((demo.length() - 1) / 2)) {
-      a = a + demo[i];
-    }
-    else {
-      b = b + demo[i];
-    }
-  }
-  au16data[0] = 152;
-  au16data[1] = 2; //b.toInt();
- 
+  b = a.substring(0, (a.length() / 2));
+  c = a.substring((a.length() / 2)+1);
+ // uid16data[0] = b.toInt();
+ // uid16data[1] = c.toInt();
+uid16data[0] = 233;
+uid16data[1] = 42018;
 
 
 }

@@ -20,7 +20,7 @@ String dia;
 int dia_,mes,ann;
 void setup()   {
 //  EEPROM.begin();
-    EEPROM.begin(EEPROM_SIZE);//esp32
+    EEPROM.begin(EEPROM_SIZE);//esp8266
   // EEPROM.commit();
   //WiFi.begin(ssid, password);
   //timeClient.begin();
@@ -30,7 +30,7 @@ void setup()   {
     duracion[i] = EEPROM.read(add_duracion[i]);
     estado[i] = EEPROM.read(add_estado[i]);
   }
-  //demo_ota();
+   
  
   tft.init(240, 240, SPI_MODE2);    // SPI_MODE3 es esp32
   barrido(1);
