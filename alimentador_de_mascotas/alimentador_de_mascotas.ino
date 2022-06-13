@@ -25,77 +25,74 @@ void setup() {
   while (WiFi.waitForConnectResult() != WL_CONNECTED) {
     Serial.println("Connection Failed! Rebooting...");
     delay(5000);
-    ESP.restart();
+   ESP.restart();
   }
 
   otta ();
   //LCD
   lcd.begin();
   lcd.backlight();
+  pinMode(bt1, INPUT);
+  pinMode(bt2, INPUT);
+  pinMode(bt3, INPUT);
   //ULTRASONICO
   pinMode(echo1, INPUT);
   pinMode(echo2, INPUT);
   pinMode(echo3, INPUT);
   pinMode(echo4, INPUT);
-  pinMode(trig, OUTPUT);
+  pinMode(trig1, OUTPUT);
+  pinMode(trig2, OUTPUT);
+  pinMode(trig3, OUTPUT);
+  pinMode(trig4, OUTPUT);
   Serial.println("Ready");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-  if (! rtc.begin()) {
-    while (1) delay(10);
-  }
+  dht.begin();
 
+  //S1.attach(32);
+  //S1.attach(33);
+  if (! rtc.begin()) {
+    //  while (1) delay(10);
+  }
+  //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   if (rtc.lostPower()) {
     rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   }
+  lcd.setCursor(0, 0);
+  lcd.print("HOLA MUNDO");
+  delay(1000);
 }
 
 void loop() {
   rtc_act();
-  lcd.setCursor(5, 0);
-  lcd.print(hora_);
-  lcd.print(":");
-  lcd.print(minuto_); 
-  lcd.setCursor(1, 1); 
-  lcd.print("H1: ");
-  lcd.print("8");
-  lcd.print(":");
-  lcd.print("30 ");
-  lcd.print("D:");
-  lcd.print("3 "); 
-  delay(1000);
-  lcd.clear();
-  lcd.setCursor(5, 0);
-  lcd.print(hora_);
-  lcd.print(":");
-  lcd.print(minuto_); 
-  lcd.setCursor(1, 1); 
-  lcd.print("H2: ");
-  lcd.print("12");
-  lcd.print(":");
-  lcd.print("30 ");
-  lcd.print("D:");
-  lcd.print("3 "); 
-  delay(1000);
-  lcd.clear();
-  lcd.setCursor(5, 0);
-  lcd.print(hora_);
-  lcd.print(":");
-  lcd.print(minuto_); 
-  lcd.setCursor(1, 1); 
-  lcd.print("H3: ");
-  lcd.print("18");
-  lcd.print(":");
-  lcd.print("30 ");
-  lcd.print("D:");
-  lcd.print("3 "); 
-  delay(1000);
-  lcd.clear();
+  pantalla();
+
 }
 
 void rtc_act() {
   DateTime now = rtc.now();
   hora_ = now.hour();
   minuto_ = now.minute();
- // alarma();
+  // alarma();
+}
+
+void pantalla() {
+  lcd.setCursor(0, 0);
+  lcd.print(hora_);
+  lcd.print(parpadeo[st]);
+  lcd.print(minuto_);
+  delay(500);
+  st=!st;
+  //lcd.clear();
+
+}
+void reserva_comida() {
+
+  S2.write(90);
+}
+void dispensador_comida() {
+  S1.write(90);
+}
+int menu_1(){
+  
 }
