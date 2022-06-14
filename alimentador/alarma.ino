@@ -13,6 +13,10 @@ void alarma() {
   Firebase.setInt(firebaseData, "TEMP/sensor1", t);
   delay(100);
   Firebase.setInt(firebaseData, "HUM/sensor1", h);
+  delay(100);
+  Firebase.setInt(firebaseData, "fr_comida/sensor1",fr_comida);
+  delay(100);
+  Firebase.setInt(firebaseData, "fr_agua/sensor1",fr_agua);
  // Firebase.end(firebaseData);
   enc_prev=enc;
   

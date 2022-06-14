@@ -14,6 +14,7 @@ void reserva_comida() {
   // DIVIDIMOS EL TIEMPO DEL PULSO ENTRE 58, TIEMPO QUE TARDA RECORRER IDA Y VUELTA UN CENTIMETRO LA ONDA SONORA
   int dist = tiempo / 29;
   if (dist > 2 && dist < 100) {
+    fr_comida = dist;
     if (dist > res_comida) {
       lcd.setCursor(0, 0);
       lcd.print("RESERVA  ");
@@ -45,6 +46,7 @@ void reserva_agua() {
   // DIVIDIMOS EL TIEMPO DEL PULSO ENTRE 58, TIEMPO QUE TARDA RECORRER IDA Y VUELTA UN CENTIMETRO LA ONDA SONORA
   int dist = tiempo / 29;
   if (dist > 2 && dist < 100) {
+    fr_agua = dist;
     if (dist > res_agua) {
       lcd.setCursor(0, 0);
       lcd.print("RESERVA  ");

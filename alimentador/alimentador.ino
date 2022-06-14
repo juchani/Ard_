@@ -59,7 +59,7 @@ bool st;
 bool bucle = 1;
 int enc, enc_prev; //variables para detectar un cambio de minutos 
 int h,t ;            //humedad y temperatura
-
+int fr_comida,fr_agua;
 void setup() {
   dht.begin();
   lcd.begin();
@@ -111,7 +111,7 @@ void loop() {
   pantalla();
   alarma();
   reserva_agua();
-  reserva_comida()
+  reserva_comida();
 
 }
 
