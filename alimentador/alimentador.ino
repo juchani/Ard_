@@ -3,18 +3,20 @@
 #include <LCD_I2C.h>
 #include "RTClib.h"
 #include "DHT.h"
-#include <ESP32Servo.h> 
-
+#include <ESP32Servo.h>
 //constantes
-#define DHTPIN 23
+#define DHTPIN 23       //pin para el dht
 #define DHTTYPE DHT11   // DHT 11
-#define limite_c 2
-#define limite_h 60
+#define limite_c 2      //limite para el contador 
+#define limite_h 60     //setpoint humedad 
+//configuracion de los botones
 #define b1 35
 #define b2 34
 #define b3 39
+//bombas de agua
 #define m1 32
 #define m2 33
+//configuracion de sensores ultrasonicos
 #define echo4 15
 #define trig4 2
 #define echo3 4
@@ -23,11 +25,14 @@
 #define trig2 5
 #define echo1 18
 #define trig1 19
+//configuracion del ventilador
 #define ventilador 27
-#define desp_comida 9  //dispensador de comida ult3
-#define desp_agua 6    //dispensador de agua ult2
-#define res_agua 10    //reserva de agua   ult4
-#define res_comida 5  //reserva de comida ult1 
+//limites
+#define desp_comida 9
+#define desp_agua 6
+#define res_agua 10
+#define res_comida 5
+//configuracion de wifi
 #define WIFI_SSID "Familia Juchani"
 #define WIFI_PASSWORD "8884992sc"
 // Credenciales Proyecto Firebase
@@ -41,19 +46,20 @@ DHT dht(DHTPIN, DHTTYPE);
 Servo M1;
 Servo M2;
 //variables
-int ind;
-int hora[] = {22, 2, 3};
-int minuto[] = {17, 20, 39};
-int duracion[] = {4, 3, 4};
-int  hora_ ;
-int  minuto_;
+int ind;     //indice
+int hora[] =     {12, 2, 3};  
+int minuto[] =   {30, 20, 39};
+int duracion[] = {4,  3, 4};
+int  hora_ ;  //hora actual RTC
+int  minuto_; //minuto actual RTC
+
 String parpadeo[] = {":", " "};
 String puntero[] = {"", " "};
 bool st;
 bool bucle = 1;
-int enc, enc_prev;
-  int h ;
-  int t;
+int enc, enc_prev; //variables para detectar un cambio de minutos 
+int h,t ;            //humedad y temperatura
+
 void setup() {
   dht.begin();
   lcd.begin();
@@ -64,6 +70,7 @@ void setup() {
   pinMode(b2, INPUT);
   pinMode(b3, INPUT);
   pinMode(m1, OUTPUT);
+  pinMode(m2, OUTPUT);
   pinMode(ventilador, OUTPUT);
   if (! rtc.begin()) {
     //  while (1) delay(10);
@@ -96,11 +103,6 @@ void setup() {
   pinMode(trig3, OUTPUT);
   pinMode(echo4, INPUT);
   pinMode(trig4, OUTPUT);
-
-  lcd.setCursor(0, 0);
-  lcd.print("HOLA MUNDO");
-  delay(1000);
-
 }
 
 void loop() {
@@ -108,8 +110,8 @@ void loop() {
   menu_1();
   pantalla();
   alarma();
-  // reserva_agua();
-  //reserva_comida()
+  reserva_agua();
+  reserva_comida()
 
 }
 
