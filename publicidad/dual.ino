@@ -14,9 +14,6 @@ void tcp0code( void * pvParameters ) {
       mb.Hreg(H1_HREG, uid16data[6] );
       mb.Hreg(H2_HREG, uid16data[8]);
       mb.Hreg(H3_HREG, uid16data[10] );
-      mb.Hreg(J1_HREG, uid16data[11] );
-      mb.Hreg(J2_HREG, uid16data[12]);
-      mb.Hreg(J3_HREG, uid16data[13] );
 
       if (digitalRead(humo)) {
 

@@ -10,9 +10,9 @@ void Task1code( void * pvParameters ) {
       if (mb.Hreg(Y_HREG) > -1 && mb.Hreg(Y_HREG) < 100) {
         Serial2.println(mb.Hreg(Y_HREG));
       }
-      int cc;
+      
       int vv=map(analogRead(VT_PIN),0,2733,0,116);
-//      int cc=map(analogRead(AT_PIN),0,);
+      int cc=map(analogRead(AT_PIN),0,97,0,170);
 
       //Setting raw value (0-1024)
       mb.Hreg(X_HREG, x );
@@ -23,9 +23,9 @@ void Task1code( void * pvParameters ) {
       mb.Hreg(ENC_HREG, enc);
       mb.Hreg(ANG_HREG, ang);
       mb.Hreg(LDR_HREG, analogRead(39));
-      mb.Hreg(C_HREG, analogRead(AT_PIN));
+      mb.Hreg(C_HREG, cc);
       mb.Hreg(V_HREG,vv);
-      mb.Hreg(C_HREG,cc);
+    //  mb.Hreg(C_HREG,analogRead(AT_PIN));
 
     }
 
